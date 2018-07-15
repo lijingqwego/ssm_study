@@ -1,0 +1,5 @@
+package com.kaisn.dao;
+
+public class EmployeeDao {
+
+}

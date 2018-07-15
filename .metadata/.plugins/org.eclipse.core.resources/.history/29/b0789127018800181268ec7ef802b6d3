@@ -1,0 +1,6 @@
+package com.kaisn.dao;
+
+public interface DepartmentMapper {
+
+	List<Department> getDepartmentList();
+}

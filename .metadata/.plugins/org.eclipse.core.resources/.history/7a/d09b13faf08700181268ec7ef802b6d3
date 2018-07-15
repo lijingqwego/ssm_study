@@ -1,0 +1,52 @@
+package com.kaisn.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.github.pagehelper.PageHelper;
+import com.kaisn.pojo.Employee;
+import com.kaisn.pojo.Msg;
+import com.kaisn.service.EmployeeService;
+
+@Controller
+@RequestMapping(value="/emp")
+public class EmployeeController {
+
+	@Autowired
+	EmployeeService employeeService;
+	
+	@RequestMapping(value="/emps" ,method=RequestMethod.GET)
+	@ResponseBody
+	public Msg getEmployeeList(HttpServletRequest request,HttpServletResponse response){
+		List<Employee> empList=null;
+		try {
+			empList= employeeService.getEmployeeList();
+		} catch (Exception e) {
+			Msg.fail();
+		}
+		return Msg.success().add("list", empList);
+	}
+	
+	@RequestMapping(value="/emps/{curPage}" ,method=RequestMethod.GET)
+	@ResponseBody
+	public Msg getEmployeeLists(@PathVariable("curPage") int curPage, HttpServletRequest request,HttpServletResponse response){
+		try {
+			PageHelper.startPage(curPage, 10);
+			List<Employee> empList = employeeService.getEmployeeList();
+			PageInfo<Employee> page = new PageInfo<Employee>(empList, 5); // 5表示要连续显示的页数
+		} catch (Exception e) {
+			Msg.fail();
+		}
+		return Msg.success().add("list", empList);
+	}
+}

@@ -1,0 +1,10 @@
+package com.kaisn.pojo;
+
+public class Employee {
+	
+	private Long empId;
+	private String empName;
+	private String gender;
+	private String email;
+	private Long deptId;
+}
