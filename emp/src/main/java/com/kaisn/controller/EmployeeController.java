@@ -30,7 +30,9 @@ import com.kaisn.pojo.Employee;
 import com.kaisn.pojo.Msg;
 import com.kaisn.service.DepartmentService;
 import com.kaisn.service.EmployeeService;
+import com.kaisn.utils.Constans;
 import com.kaisn.utils.ExcelUtils;
+import com.kaisn.utils.StringUtils;
 
 @Controller
 @RequestMapping(value = "/emp")
@@ -148,18 +150,35 @@ public class EmployeeController {
 		return Msg.success();
 	}
 	
-	@RequestMapping(value = "/download", method = RequestMethod.GET)
+	@RequestMapping(value = "/download/{mode}", method = RequestMethod.GET)
 	@ResponseBody
-	public Msg download(HttpServletResponse response) {
+	public Msg download(@PathVariable("mode") String mode,HttpServletRequest request,HttpServletResponse response) {
 		try {
-			List<Employee> empList = employeeService.getEmployeeList();
+			List<Employee> empList=null;
+			String fileName=null;
+			if(Constans.EXCEL_EXPORT_DATA.equals(mode))
+			{
+				empList = employeeService.getEmployeeList();
+				fileName="员工列表-"+StringUtils.getUniqueString()+".xls";
+			}else{
+				fileName="清单模板-"+StringUtils.getUniqueString()+".xls";
+			}
 			// 2.导出
 			// 这里设置的文件格式是application/x-excel
 			response.setContentType("application/x-excel");
 			response.setHeader("Content-Disposition",
-					"attachment;filename=" + new String("员工列表.xls".getBytes(), "ISO-8859-1"));
+					"attachment;filename=" + new String(fileName.getBytes(), "ISO-8859-1"));
 			ServletOutputStream outputStream = response.getOutputStream();
-			ExcelUtils.writeExcel(empList, outputStream);
+			List<Department> deptList = departmentService.getDepartmentList();
+			if(deptList!=null)
+			{
+				int size = deptList.size();
+				String[] depts=new String[size];
+				for (int i=0;i<size;i++) {
+					depts[i]=deptList.get(i).getDeptName();
+				}
+				ExcelUtils.writeExcel(empList, depts,outputStream,mode);
+			}
 			if (outputStream != null)
 				outputStream.close();
 		} catch (Exception e) {

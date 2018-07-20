@@ -450,7 +450,12 @@ $('#emp_upload_modal_btn').click(function() {
 
 //下载清单文件
 $('#download_btn').click(function() {
-	window.location.href=appPath+'/emp/download';
+	window.location.href=appPath+'/emp/download/1';
+});
+
+//导出员工列表
+$('#emp_download_all').click(function() {
+	window.location.href=appPath+'/emp/download/2';
 });
 
 $('#emp_upload_btn').on('click',function(){
@@ -465,6 +470,10 @@ $('#emp_upload_btn').on('click',function(){
             // 告诉jQuery不要去设置Content-Type请求头
             contentType : false,
             success : function(data) {
+            	if(data.code==200){
+            		$('#empUploadModal').modal('hide');
+            		to_page(1);
+        		}
             	console.log(data);
             }
         });

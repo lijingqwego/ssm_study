@@ -196,7 +196,8 @@
 			<div class="col-md-4 col-md-offset-8">
 				<button class="btn btn-primary" id="emp_add_modal_btn">新增</button>
 				<button class="btn btn-danger" id="emp_delete_all">删除</button>
-				<button class="btn btn-primary" id="emp_upload_modal_btn">导入员工列表</button>
+				<button class="btn btn-primary" id="emp_upload_modal_btn">导入</button>
+				<button class="btn btn-danger" id="emp_download_all">导出</button>
 			</div>
 		</div>
 		<!--表格数据-->
