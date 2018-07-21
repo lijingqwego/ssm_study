@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.kaisn.pojo.Department"/>
 <fullyQualifiedTypeName name="com.kaisn.dao.EmployeeMapper"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="com.kaisn.controller.EmployeeController"/>
@@ -29,4 +28,13 @@
 <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.kaisn.utils.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Font"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.util.CellRangeAddressList"/>
+<fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFDataValidation"/>
+<fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.DVConstraint"/>
+<fullyQualifiedTypeName name="com.kaisn.utils.Constans"/>
 </qualifiedTypeNameHistroy>

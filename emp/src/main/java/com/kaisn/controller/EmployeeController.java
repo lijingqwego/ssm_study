@@ -49,21 +49,21 @@ public class EmployeeController {
 	public Msg getEmployeeList(HttpServletRequest request, HttpServletResponse response) {
 		List<Employee> empList = null;
 		try {
-			empList = employeeService.getEmployeeList();
+			empList = employeeService.getEmployeeList(null);
 		} catch (Exception e) {
 			return Msg.fail();
 		}
 		return Msg.success().add("list", empList);
 	}
 
-	@RequestMapping(value = "/list/{curPage}", method = RequestMethod.GET)
+	@RequestMapping(value = "/list/{curPage}", method = RequestMethod.POST)
 	@ResponseBody
-	public Msg getEmployeeLists(@PathVariable("curPage") int curPage, HttpServletRequest request,
-			HttpServletResponse response) {
+	public Msg getEmployeeLists(@PathVariable("curPage") int curPage, Employee employee) {
 		PageInfo<Employee> page = null;
+		System.out.println(employee);
 		try {
-			PageHelper.startPage(curPage, 10);// 10表示每页条数
-			List<Employee> empList = employeeService.getEmployeeList();
+			PageHelper.startPage(curPage, 5);// 10表示每页条数
+			List<Employee> empList = employeeService.getEmployeeList(employee);
 			page = new PageInfo<Employee>(empList, 5); // 5表示要连续显示的页数
 		} catch (Exception e) {
 			return Msg.fail();
@@ -158,7 +158,7 @@ public class EmployeeController {
 			String fileName=null;
 			if(Constans.EXCEL_EXPORT_DATA.equals(mode))
 			{
-				empList = employeeService.getEmployeeList();
+				empList = employeeService.getEmployeeList(null);
 				fileName="员工列表-"+StringUtils.getUniqueString()+".xls";
 			}else{
 				fileName="清单模板-"+StringUtils.getUniqueString()+".xls";

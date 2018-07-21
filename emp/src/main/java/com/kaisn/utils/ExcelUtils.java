@@ -62,7 +62,7 @@ public class ExcelUtils {
 
 			// 3.2创建列标题;并且设置列标题
 			HSSFRow row2 = sheet.createRow(1);
-			String[] titles = { "员工姓名","性别","邮箱","所属部门" };
+			String[] titles = { "员工姓名","性别","邮箱","所属部门","描述" };
 			String[] genders = { "男","女"};
 			for (int i = 0; i < titles.length; i++) {
 				HSSFCell cell2 = row2.createCell(i);
@@ -89,6 +89,8 @@ public class ExcelUtils {
 						cell3.setCellValue(empList.get(j).getEmail());
 						HSSFCell cell4 = row3.createCell(3);
 						cell4.setCellValue(empList.get(j).getDepartment().getDeptName());
+						HSSFCell cell5 = row3.createCell(4);
+						cell5.setCellValue(empList.get(j).getDescription());
 					}
 				}
 			}
@@ -153,6 +155,9 @@ public class ExcelUtils {
 					// 所属部门
 					Cell cell3 = row0.getCell(3);
 					emp.setDeptId(deptMap.get(cell3.getStringCellValue()));
+					// 描述
+					Cell cell4 = row0.getCell(4);
+					emp.setDescription(cell4.getStringCellValue());
 					
 					emps.add(emp);
 				}

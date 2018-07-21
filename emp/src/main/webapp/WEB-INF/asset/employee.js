@@ -10,15 +10,17 @@ $(function() {
 	appPath=prePath+postPath;
 	//alert(appPath);
 	//去首页
+	getDepts($("#select_search"));
 	to_page(1);
 });
 
 function to_page(curPage) {
 	$.ajax({
 		url : appPath+"/emp/list/"+curPage,
-		type : "GET",
+		data:$("#from_search").serialize(),
+		type : "POST",
 		success : function(result) {
-			//console.log(result);
+			console.log(result);
 			//return ;
 			//1.解析并显示员工数据
 			build_emps_table(result);
@@ -44,6 +46,7 @@ function build_emps_table(result) {
 				item.gender == 'M' ? "男" : "女");
 		var emailTd = $("<td></td>").append(item.email);
 		var deptName = $("<td></td>").append(item.department.deptName);
+		var description = $("<td></td>").append(item.description);
 		var editBtn = $("<button></button>").addClass(
 				"btn btn-primary btn-sm edit_btn").append(
 				$("<span></span>").addClass(
@@ -70,6 +73,7 @@ function build_emps_table(result) {
 			     	.append(genderTd)
 			    	.append(emailTd)
 			    	.append(deptName)
+			    	.append(description)
 				    .append(btnTd)
 				    .appendTo("#emps_table tbody")
 	})
@@ -177,11 +181,12 @@ $("#emp_add_modal_btn").click(function() {
 function getDepts(ele){
 	//清空之前下拉列表的值
 	$(ele).empty();
+	$("<option ></option>").append("--请选择--").attr("value","").appendTo(ele);
 	$.ajax({
 		url: appPath+"/dept/list",
 		type:"GET",
 		success:function(result){
-			//console.log(result);
+//			console.log(result);
 			//显示部门信息在下拉列表中
 			//$("#dept_add_select").append("")
 			$.each(result.extend.list,function(){
@@ -334,6 +339,7 @@ function getEmp(id){
 			$("#email_update_input").val(empData.email);
 			$("#empUpdateModal input[name=gender]").val([empData.gender]); //当单选框被选中
 			$("#empUpdateModal select").val([empData.deptId]);
+			$("#desc_update_input").text(empData.description);
 		} 
 		
 	})
@@ -477,4 +483,9 @@ $('#emp_upload_btn').on('click',function(){
             	console.log(data);
             }
         });
+});
+
+//筛选员工列表
+$("#emp_search_btn").click(function(){
+	to_page(1);
 });

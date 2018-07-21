@@ -18,6 +18,8 @@ public class Employee {
 	private Long deptId;
 	//À˘ Ù≤ø√≈
 	private Department department;
+	//√Ë ˆ
+	private String description;
 	public Long getEmpId() {
 		return empId;
 	}
@@ -53,6 +55,17 @@ public class Employee {
 	}
 	public void setDepartment(Department department) {
 		this.department = department;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", gender=" + gender + ", email=" + email
+				+ ", deptId=" + deptId + ", department=" + department + ", description=" + description + "]";
 	}
 	
 	

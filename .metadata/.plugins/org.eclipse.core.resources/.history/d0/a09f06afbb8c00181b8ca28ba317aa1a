@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaisn.dao.EmployeeMapper">
+
+	<resultMap type="com.kaisn.pojo.Employee" id="employee">
+		<id column="EMP_ID" jdbcType="DECIMAL" property="empId" />
+	    <result column="EMP_NAME" jdbcType="VARCHAR" property="empName" />
+	    <result column="GENDER" jdbcType="CHAR" property="gender" />
+	    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+	    <result column="d_id" jdbcType="DECIMAL" property="deptId" />
+	    <result column="description" jdbcType="VARCHAR" property="description" />
+	    <association property="department" javaType="com.kaisn.pojo.Department">
+	    	<id column="dept_id" jdbcType="DECIMAL" property="deptId" />
+    		<result column="dept_name" jdbcType="VARCHAR" property="deptName" />
+	    </association>
+	</resultMap>
+	
+	<select id="getEmployeeList" parameterType="com.kaisn.pojo.Employee" resultMap="employee">
+		select 
+		e.emp_id,
+		e.emp_name,
+		e.gender,
+		e.email,
+		e.description,
+		d.dept_id,
+		d.dept_name 
+		from t_emp e 
+		left join t_dept d 
+		on e.d_id=d.dept_id
+		<where>
+			<if test="empName != null">
+				and e.emp_name=#{empName,jdbcType=VARCHAR}
+			</if>
+			<if test="gender != null">
+				and e.gender=#{gender,jdbcType=VARCHAR}
+			</if>
+			<if test="deptId != null">
+				and e.d_Id=#{deptId,jdbcType=DECIMAL}
+			</if>
+		</where>
+		order by e.update_time desc
+	</select>
+	
+	<select id="getEmployeeCountByName" parameterType="java.lang.String" resultType="int">
+		select count(1) from t_emp where emp_name=#{empName,jdbcType=VARCHAR}
+	</select>
+	
+	<insert id="addEmployee" parameterType="com.kaisn.pojo.Employee">
+		insert into t_emp
+		(
+		emp_name,
+		gender,
+		email,
+		d_id,
+		description,
+		update_time
+		) 
+		values
+		(
+		#{empName,jdbcType=VARCHAR},
+		#{gender,jdbcType=VARCHAR},
+		#{email,jdbcType=VARCHAR},
+		#{deptId,jdbcType=DECIMAL},
+		#{description,jdbcType=VARCHAR},
+		now()
+		)
+	</insert>
+	
+	<delete id="delEmployee" parameterType="java.lang.String">
+		delete from t_emp where emp_id in
+		<foreach collection="array" item="empId" index="index" open="(" separator="," close=")">
+			#{empId}
+		</foreach>
+	</delete>
+	
+	<select id="getEmployeeInfo" parameterType="java.lang.Long" resultMap="employee">
+		select 
+		e.emp_id,
+		e.emp_name,
+		e.gender,
+		e.email,
+		e.d_id,
+		e.description,
+		d.dept_id,
+		d.dept_name 
+		from t_emp e 
+		left join t_dept d 
+		on e.d_id=d.dept_id
+		where e.emp_id=#{empId,jdbcType=DECIMAL}
+	</select>
+	
+	<update id="updateEmployee" parameterType="com.kaisn.pojo.Employee">
+		update t_emp set 
+		<if test="empName != null">
+			emp_name=#{empName,jdbcType=VARCHAR},
+		</if>
+		<if test="gender != null">
+			gender=#{gender,jdbcType=VARCHAR},
+		</if>
+		<if test="email != null">
+			email=#{email,jdbcType=VARCHAR},
+		</if>
+		<if test="deptId != null">
+			d_Id=#{deptId,jdbcType=DECIMAL},
+		</if>
+		<if test="description != null">
+			description=#{description,jdbcType=VARCHAR},
+		</if>
+			update_time=now()
+		where emp_id=#{empId,jdbcType=DECIMAL}
+	</update>
+	
+	<insert id="addEmployeeList" parameterType="java.util.List">
+		insert into t_emp
+		(
+		emp_name,
+		gender,
+		email,
+		d_id,
+		description,
+		update_time
+		) 
+		values
+		<foreach collection ="list" item="employee" index= "index" separator =",">
+		(
+		#{employee.empName,jdbcType=VARCHAR},
+		#{employee.gender,jdbcType=VARCHAR},
+		#{employee.email,jdbcType=VARCHAR},
+		#{employee.deptId,jdbcType=DECIMAL},
+		#{employee.description,jdbcType=VARCHAR},
+		now()
+		)
+		</foreach >
+	</insert>
+
+</mapper>

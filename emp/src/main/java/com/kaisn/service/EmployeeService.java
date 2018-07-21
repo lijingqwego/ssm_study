@@ -14,8 +14,8 @@ public class EmployeeService {
 	@Autowired
 	private EmployeeMapper employeeMapper;
 	
-	public List<Employee> getEmployeeList(){
-		return employeeMapper.getEmployeeList();
+	public List<Employee> getEmployeeList(Employee employee){
+		return employeeMapper.getEmployeeList(employee);
 	}
 
 	public boolean isExistEmpName(String empName) {

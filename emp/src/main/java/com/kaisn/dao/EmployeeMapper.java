@@ -6,7 +6,7 @@ import com.kaisn.pojo.Employee;
 
 public interface EmployeeMapper {
 
-	List<Employee> getEmployeeList();
+	List<Employee> getEmployeeList(Employee employee);
 
 	int getEmployeeCountByName(String empName);
 

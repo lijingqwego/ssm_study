@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="emp_upload_btn" key="selection"/>
+		<item value="jackson" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="emp_upload_btn"/>
-			<item value="}"/>
-			<item value="empUpdateModal"/>
-			<item value="getEmp"/>
-			<item value="del"/>
-			<item value="delte"/>
-			<item value="empAddModal"/>
-			<item value="save"/>
+			<item value="jackson"/>
+			<item value="jedis.version"/>
+			<item value="commons-lang3"/>
+			<item value="jsp"/>
+			<item value="jstl"/>
+			<item value="slf4j"/>
+			<item value="jsqlparser"/>
+			<item value="pagehelper"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -24,7 +24,7 @@
 		<item value="300" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="410" key="DIALOG_HEIGHT"/>
-		<item value="956" key="DIALOG_X_ORIGIN"/>
-		<item value="162" key="DIALOG_Y_ORIGIN"/>
+		<item value="154" key="DIALOG_X_ORIGIN"/>
+		<item value="201" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

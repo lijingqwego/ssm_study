@@ -8,23 +8,36 @@
 	    <result column="GENDER" jdbcType="CHAR" property="gender" />
 	    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
 	    <result column="d_id" jdbcType="DECIMAL" property="deptId" />
+	    <result column="description" jdbcType="VARCHAR" property="description" />
 	    <association property="department" javaType="com.kaisn.pojo.Department">
 	    	<id column="dept_id" jdbcType="DECIMAL" property="deptId" />
     		<result column="dept_name" jdbcType="VARCHAR" property="deptName" />
 	    </association>
 	</resultMap>
 	
-	<select id="getEmployeeList" resultMap="employee">
+	<select id="getEmployeeList" parameterType="com.kaisn.pojo.Employee" resultMap="employee">
 		select 
 		e.emp_id,
 		e.emp_name,
 		e.gender,
 		e.email,
+		e.description,
 		d.dept_id,
 		d.dept_name 
 		from t_emp e 
 		left join t_dept d 
 		on e.d_id=d.dept_id
+		<where>
+			<if test="empName != null and empName != ''">
+				and e.emp_name LIKE concat(concat('%',#{empName,jdbcType=VARCHAR}),'%')
+			</if>
+			<if test="gender != null and gender != ''">
+				and e.gender=#{gender,jdbcType=VARCHAR}
+			</if>
+			<if test="deptId != null and deptId != ''">
+				and e.d_Id=#{deptId,jdbcType=DECIMAL}
+			</if>
+		</where>
 		order by e.update_time desc
 	</select>
 	
@@ -39,6 +52,7 @@
 		gender,
 		email,
 		d_id,
+		description,
 		update_time
 		) 
 		values
@@ -47,6 +61,7 @@
 		#{gender,jdbcType=VARCHAR},
 		#{email,jdbcType=VARCHAR},
 		#{deptId,jdbcType=DECIMAL},
+		#{description,jdbcType=VARCHAR},
 		now()
 		)
 	</insert>
@@ -65,6 +80,7 @@
 		e.gender,
 		e.email,
 		e.d_id,
+		e.description,
 		d.dept_id,
 		d.dept_name 
 		from t_emp e 
@@ -87,6 +103,9 @@
 		<if test="deptId != null">
 			d_Id=#{deptId,jdbcType=DECIMAL},
 		</if>
+		<if test="description != null">
+			description=#{description,jdbcType=VARCHAR},
+		</if>
 			update_time=now()
 		where emp_id=#{empId,jdbcType=DECIMAL}
 	</update>
@@ -98,6 +117,7 @@
 		gender,
 		email,
 		d_id,
+		description,
 		update_time
 		) 
 		values
@@ -107,6 +127,7 @@
 		#{employee.gender,jdbcType=VARCHAR},
 		#{employee.email,jdbcType=VARCHAR},
 		#{employee.deptId,jdbcType=DECIMAL},
+		#{employee.description,jdbcType=VARCHAR},
 		now()
 		)
 		</foreach >
