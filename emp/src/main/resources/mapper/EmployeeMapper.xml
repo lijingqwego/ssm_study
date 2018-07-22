@@ -8,10 +8,15 @@
 	    <result column="GENDER" jdbcType="CHAR" property="gender" />
 	    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
 	    <result column="d_id" jdbcType="DECIMAL" property="deptId" />
+	    <result column="p_id" jdbcType="DECIMAL" property="posId" />
 	    <result column="description" jdbcType="VARCHAR" property="description" />
 	    <association property="department" javaType="com.kaisn.pojo.Department">
 	    	<id column="dept_id" jdbcType="DECIMAL" property="deptId" />
     		<result column="dept_name" jdbcType="VARCHAR" property="deptName" />
+	    </association>
+	    <association property="position" javaType="com.kaisn.pojo.Position">
+	    	<id column="pos_id" jdbcType="DECIMAL" property="posId" />
+    		<result column="pos_name" jdbcType="VARCHAR" property="posName" />
 	    </association>
 	</resultMap>
 	
@@ -21,12 +26,18 @@
 		e.emp_name,
 		e.gender,
 		e.email,
+		e.d_id,
+		e.p_id,
 		e.description,
 		d.dept_id,
-		d.dept_name 
+		d.dept_name,
+		p.pos_id,
+		p.pos_name 
 		from t_emp e 
 		left join t_dept d 
 		on e.d_id=d.dept_id
+		left join t_pos p 
+		on e.p_id=p.pos_id
 		<where>
 			<if test="empName != null and empName != ''">
 				and e.emp_name LIKE concat(concat('%',#{empName,jdbcType=VARCHAR}),'%')
@@ -35,7 +46,10 @@
 				and e.gender=#{gender,jdbcType=VARCHAR}
 			</if>
 			<if test="deptId != null and deptId != ''">
-				and e.d_Id=#{deptId,jdbcType=DECIMAL}
+				and e.d_id=#{deptId,jdbcType=DECIMAL}
+			</if>
+			<if test="posId != null and posId != ''">
+				and p.p_id=#{posId,jdbcType=DECIMAL}
 			</if>
 		</where>
 		order by e.update_time desc
@@ -52,6 +66,7 @@
 		gender,
 		email,
 		d_id,
+		p_id,
 		description,
 		update_time
 		) 
@@ -61,6 +76,7 @@
 		#{gender,jdbcType=VARCHAR},
 		#{email,jdbcType=VARCHAR},
 		#{deptId,jdbcType=DECIMAL},
+		#{posId,jdbcType=DECIMAL},
 		#{description,jdbcType=VARCHAR},
 		now()
 		)
@@ -80,12 +96,17 @@
 		e.gender,
 		e.email,
 		e.d_id,
+		e.p_id,
 		e.description,
 		d.dept_id,
-		d.dept_name 
+		d.dept_name,
+		p.pos_id,
+		p.pos_name 
 		from t_emp e 
 		left join t_dept d 
 		on e.d_id=d.dept_id
+		left join t_pos p 
+		on e.p_id=p.pos_id
 		where e.emp_id=#{empId,jdbcType=DECIMAL}
 	</select>
 	
@@ -101,7 +122,10 @@
 			email=#{email,jdbcType=VARCHAR},
 		</if>
 		<if test="deptId != null">
-			d_Id=#{deptId,jdbcType=DECIMAL},
+			d_id=#{deptId,jdbcType=DECIMAL},
+		</if>
+		<if test="posId != null">
+			p_id=#{posId,jdbcType=DECIMAL},
 		</if>
 		<if test="description != null">
 			description=#{description,jdbcType=VARCHAR},
@@ -117,6 +141,7 @@
 		gender,
 		email,
 		d_id,
+		p_id,
 		description,
 		update_time
 		) 
@@ -127,6 +152,7 @@
 		#{employee.gender,jdbcType=VARCHAR},
 		#{employee.email,jdbcType=VARCHAR},
 		#{employee.deptId,jdbcType=DECIMAL},
+		#{employee.posId,jdbcType=DECIMAL},
 		#{employee.description,jdbcType=VARCHAR},
 		now()
 		)

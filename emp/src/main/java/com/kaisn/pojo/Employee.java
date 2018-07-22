@@ -18,6 +18,10 @@ public class Employee {
 	private Long deptId;
 	//所属部门
 	private Department department;
+	//职位编号
+	private Long posId;
+	//职位
+	private Position position;
 	//描述
 	private String description;
 	public Long getEmpId() {
@@ -56,17 +60,23 @@ public class Employee {
 	public void setDepartment(Department department) {
 		this.department = department;
 	}
+	public Long getPosId() {
+		return posId;
+	}
+	public void setPosId(Long posId) {
+		this.posId = posId;
+	}
+	public Position getPosition() {
+		return position;
+	}
+	public void setPosition(Position position) {
+		this.position = position;
+	}
 	public String getDescription() {
 		return description;
 	}
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	@Override
-	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", gender=" + gender + ", email=" + email
-				+ ", deptId=" + deptId + ", department=" + department + ", description=" + description + "]";
-	}
-	
 	
 }

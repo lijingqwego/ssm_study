@@ -21,7 +21,6 @@
 <fullyQualifiedTypeName name="javax.validation.constraints.Pattern"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.xsom.impl.scd.Iterators.Map"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletOutputStream"/>
 <fullyQualifiedTypeName name="com.kaisn.utils.ExcelUtils"/>
@@ -37,4 +36,7 @@
 <fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFDataValidation"/>
 <fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.DVConstraint"/>
 <fullyQualifiedTypeName name="com.kaisn.utils.Constans"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.kaisn.pojo.Employee"/>
+<fullyQualifiedTypeName name="com.kaisn.pojo.Position"/>
 </qualifiedTypeNameHistroy>

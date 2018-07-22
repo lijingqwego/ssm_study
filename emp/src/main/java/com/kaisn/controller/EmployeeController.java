@@ -28,8 +28,10 @@ import com.github.pagehelper.PageInfo;
 import com.kaisn.pojo.Department;
 import com.kaisn.pojo.Employee;
 import com.kaisn.pojo.Msg;
+import com.kaisn.pojo.Position;
 import com.kaisn.service.DepartmentService;
 import com.kaisn.service.EmployeeService;
+import com.kaisn.service.PositionService;
 import com.kaisn.utils.Constans;
 import com.kaisn.utils.ExcelUtils;
 import com.kaisn.utils.StringUtils;
@@ -43,7 +45,10 @@ public class EmployeeController {
 	
 	@Autowired
 	DepartmentService departmentService;
-
+	
+	@Autowired
+	PositionService positionService;
+	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	@ResponseBody
 	public Msg getEmployeeList(HttpServletRequest request, HttpServletResponse response) {
@@ -60,9 +65,8 @@ public class EmployeeController {
 	@ResponseBody
 	public Msg getEmployeeLists(@PathVariable("curPage") int curPage, Employee employee) {
 		PageInfo<Employee> page = null;
-		System.out.println(employee);
 		try {
-			PageHelper.startPage(curPage, 5);// 10表示每页条数
+			PageHelper.startPage(curPage, 10);// 10表示每页条数
 			List<Employee> empList = employeeService.getEmployeeList(employee);
 			page = new PageInfo<Employee>(empList, 5); // 5表示要连续显示的页数
 		} catch (Exception e) {
@@ -170,14 +174,20 @@ public class EmployeeController {
 					"attachment;filename=" + new String(fileName.getBytes(), "ISO-8859-1"));
 			ServletOutputStream outputStream = response.getOutputStream();
 			List<Department> deptList = departmentService.getDepartmentList();
-			if(deptList!=null)
+			List<Position> posList = positionService.getPositionList();
+			if(deptList!=null && posList!=null)
 			{
-				int size = deptList.size();
-				String[] depts=new String[size];
-				for (int i=0;i<size;i++) {
+				int deptListSize = deptList.size();
+				String[] depts=new String[deptListSize];
+				for (int i=0;i<deptListSize;i++) {
 					depts[i]=deptList.get(i).getDeptName();
 				}
-				ExcelUtils.writeExcel(empList, depts,outputStream,mode);
+				int posListSize = posList.size();
+				String[] poss=new String[posListSize];
+				for (int i=0;i<posListSize;i++) {
+					poss[i]=posList.get(i).getPosName();
+				}
+				ExcelUtils.writeExcel(empList, depts,poss,outputStream,mode);
 			}
 			if (outputStream != null)
 				outputStream.close();

@@ -32,10 +32,11 @@ public class ExcelUtils {
 
 	/**
 	 * 将用户的信息导入到excel文件中去
+	 * @param poss 
 	 * @param userList 用户列表
 	 * @param out 输出表
 	 */
-	public static void writeExcel(List<Employee> empList,String[] depts, ServletOutputStream out,String mode) {
+	public static void writeExcel(List<Employee> empList,String[] depts, String[] poss, ServletOutputStream out,String mode) {
 		try {
 			// 1.创建工作簿
 			HSSFWorkbook workbook = new HSSFWorkbook();
@@ -62,7 +63,7 @@ public class ExcelUtils {
 
 			// 3.2创建列标题;并且设置列标题
 			HSSFRow row2 = sheet.createRow(1);
-			String[] titles = { "员工姓名","性别","邮箱","所属部门","描述" };
+			String[] titles = { "员工姓名","性别","邮箱","所属部门","职位","描述" };
 			String[] genders = { "男","女"};
 			for (int i = 0; i < titles.length; i++) {
 				HSSFCell cell2 = row2.createCell(i);
@@ -74,6 +75,8 @@ public class ExcelUtils {
 			setDropMenu(sheet,genders,2, Constans.EXCEL_IMPORT_LINENUMBER, 1, 1);
 			//部门下拉选项
 			setDropMenu(sheet,depts,2, Constans.EXCEL_IMPORT_LINENUMBER, 3, 3);
+			//职位下拉选项
+			setDropMenu(sheet,poss,2, Constans.EXCEL_IMPORT_LINENUMBER, 4, 4);
 			//如果mode=2导出数据
 			if(Constans.EXCEL_EXPORT_DATA.equals(mode)){
 				// 4.操作单元格;将用户列表写入excel

@@ -10,7 +10,8 @@ $(function() {
 	appPath=prePath+postPath;
 	//alert(appPath);
 	//去首页
-	getDepts($("#select_search"));
+	getDepts($("#select_dept_search"),"search");
+	getPositions($("#select_pos_search"),"search");
 	to_page(1);
 });
 
@@ -18,6 +19,7 @@ function to_page(curPage) {
 	$.ajax({
 		url : appPath+"/emp/list/"+curPage,
 		data:$("#from_search").serialize(),
+		async:false,
 		type : "POST",
 		success : function(result) {
 			console.log(result);
@@ -46,6 +48,7 @@ function build_emps_table(result) {
 				item.gender == 'M' ? "男" : "女");
 		var emailTd = $("<td></td>").append(item.email);
 		var deptName = $("<td></td>").append(item.department.deptName);
+		var posName = $("<td></td>").append(item.position.posName);
 		var description = $("<td></td>").append(item.description);
 		var editBtn = $("<button></button>").addClass(
 				"btn btn-primary btn-sm edit_btn").append(
@@ -73,6 +76,7 @@ function build_emps_table(result) {
 			     	.append(genderTd)
 			    	.append(emailTd)
 			    	.append(deptName)
+			    	.append(posName)
 			    	.append(description)
 				    .append(btnTd)
 				    .appendTo("#emps_table tbody")
@@ -164,13 +168,14 @@ function reset_form(ele){
 	$(ele).find(".help-block").text("");
 }
 
-	//点击新增按钮弹出模态框
+//点击新增按钮弹出模态框
 $("#emp_add_modal_btn").click(function() {
 	//清除表单数据(表单完整重置(表单的数据，表单的样式))
 	reset_form("#empAddModal form");
 	$("#empAddModal form")[0].reset();
 	//发送ajax请求，查出部门信息，显示在下拉列表中
-	getDepts("#empAddModal select");
+	getDepts($("#dept_add_select"),"add");
+	getPositions($("#pos_add_select"),"add");
 	//弹出模态框
 	$("#empAddModal").modal({ //利用js创建模态框
 		backdrop : "static"
@@ -178,12 +183,15 @@ $("#emp_add_modal_btn").click(function() {
 });
 
 //查出所有的部门信息并显示在下拉列表中
-function getDepts(ele){
+function getDepts(ele,tag){
 	//清空之前下拉列表的值
 	$(ele).empty();
-	$("<option ></option>").append("--请选择--").attr("value","").appendTo(ele);
+	if(tag=='search'){
+		$("<option ></option>").append("--请选择--").attr("value","").appendTo(ele);
+	}
 	$.ajax({
 		url: appPath+"/dept/list",
+		async:false,
 		type:"GET",
 		success:function(result){
 //			console.log(result);
@@ -191,6 +199,29 @@ function getDepts(ele){
 			//$("#dept_add_select").append("")
 			$.each(result.extend.list,function(){
 			var optionEle = $("<option ></option>").append(this.deptName).attr("value",this.deptId);
+			optionEle.appendTo(ele);
+			})
+		}
+	});		
+};	
+
+//查出所有的职位信息并显示在下拉列表中
+function getPositions(ele,tag){
+	//清空之前下拉列表的值
+	$(ele).empty();
+	if(tag=='search'){
+		$("<option ></option>").append("--请选择--").attr("value","").appendTo(ele);
+	}
+	$.ajax({
+		url: appPath+"/pos/list",
+		async:false,
+		type:"GET",
+		success:function(result){
+			console.log(result);
+			//显示部门信息在下拉列表中
+			//$("#dept_add_select").append("")
+			$.each(result.extend.list,function(){
+			var optionEle = $("<option ></option>").append(this.posName).attr("value",this.posId);
 			optionEle.appendTo(ele);
 			})
 		}
@@ -318,7 +349,8 @@ $("#emp_save_btn").click(function(){
 $(document). on("click", ".edit_btn" ,function(){
 	//0.查出员工信息，显示员工信息
 	//1.查出部门信息，并显示部门列表
-	getDepts("#empUpdateModal select");
+	getDepts($("#dept_upd_select"),"upd");
+	getPositions($("#pos_upd_select"),"upd");
  	getEmp($(this).attr("edit-id")); //获取当前按钮的id 
  	//3.把员工的id传递给模态框的更新按钮
  	$("#emp_uptate_btn").attr("edit-id",$(this).attr("edit-id"));
@@ -338,7 +370,8 @@ function getEmp(id){
 			$("#empName_uptate_static").text(empData.empName);
 			$("#email_update_input").val(empData.email);
 			$("#empUpdateModal input[name=gender]").val([empData.gender]); //当单选框被选中
-			$("#empUpdateModal select").val([empData.deptId]);
+			$("#dept_upd_select").val([empData.deptId]);
+			$("#pos_upd_select").val([empData.posId]);
 			$("#desc_update_input").text(empData.description);
 		} 
 		

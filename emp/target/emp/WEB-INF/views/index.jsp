@@ -75,11 +75,22 @@
 							<label class="col-sm-2 control-label">部门</label>
 							<!-- 部门提交部门id即可 -->
 							<div class="col-sm-4"> <!-- 变成4列 -->
-								<select class="form-control" name="dId" id="dept_add_select">
+								<select class="form-control" name="dId" id="dept_upd_select">
 
 								</select>
 							</div>
 						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-2 control-label">职位</label>
+							<!-- 职位提交部门id即可 -->
+							<div class="col-sm-4"> <!-- 变成4列 -->
+								<select class="form-control" name="posId" id="pos_upd_select">
+
+								</select>
+							</div>
+						</div>
+						
 						<div class="form-group">
 						    <label class="col-sm-2 control-label">描述</label>
 						    <div class="col-sm-10">
@@ -152,12 +163,22 @@
 						</div>
 						
 						<div class="form-group">
-						    <label class="col-sm-2 control-label">描述</label>
-						    <textarea class="form-control" name="description" rows="3"></textarea>
+							<label class="col-sm-2 control-label">职位</label>
+							<!-- 职位提交部门id即可 -->
+							<div class="col-sm-4"> <!-- 变成4列 -->
+								<select class="form-control" name="posId" id="pos_add_select">
+
+								</select>
+							</div>
 						</div>
-
+						
+						<div class="form-group">
+						    <label class="col-sm-2 control-label">描述</label>
+						    <div class="col-sm-10">
+						    	<textarea class="form-control" name="description" rows="3"></textarea>
+						    </div>
+						</div>
 					</form>
-
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -236,7 +257,12 @@
 			  </div>
 			  <div class="form-group">
 			    <label for="name">部门</label>
-			    <select class="form-control" name="deptId" id="select_search" >
+			    <select class="form-control" name="deptId" id="select_dept_search" >
+			    </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="name">职位</label>
+			    <select class="form-control" name="posId" id="select_pos_search" >
 			    </select>
 			  </div>
 			  <button class="btn btn-primary" id="emp_search_btn">筛选</button>
@@ -256,6 +282,7 @@
 							<th>性别</th>
 							<th>邮箱</th>
 							<th>部门</th>
+							<th>职位</th>
 							<th>描述</th>
 							<th>操作</th>
 						</tr>

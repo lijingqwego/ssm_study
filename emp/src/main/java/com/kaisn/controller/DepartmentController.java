@@ -24,7 +24,7 @@ public class DepartmentController {
 	
 	@ResponseBody
 	@RequestMapping(value="/list" ,method=RequestMethod.GET)
-	public Msg getEmployeeList(HttpServletRequest request,HttpServletResponse response){
+	public Msg getDepartmentList(HttpServletRequest request,HttpServletResponse response){
 		List<Department> deptList=null;
 		try {
 			deptList = departmentService.getDepartmentList();
