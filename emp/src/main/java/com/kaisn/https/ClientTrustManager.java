@@ -10,6 +10,7 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509TrustManager;
 
+import com.kaisn.utils.EncryptUtil;
 import com.kaisn.utils.PropertiesUtil;
 import com.kaisn.utils.StringUtils;  
 
@@ -28,6 +29,8 @@ public class ClientTrustManager implements X509TrustManager
     	{
     		InputStream inputStream = ClientTrustManager.class.getResourceAsStream(keyStorePath);
         	KeyStore ks = KeyStore.getInstance(keyStoreType);
+        	//√‹¬ÎΩ‚√‹
+        	keyStorePassword=EncryptUtil.decrypt(keyStorePassword);
         	ks.load(inputStream, keyStorePassword.toCharArray());
         	TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
         	tmf.init(ks);
