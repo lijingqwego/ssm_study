@@ -1,0 +1,43 @@
+package com.kaisn.https;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.security.KeyStore;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;  
+
+public class ClientTrustManager implements X509TrustManager{  
+	
+	private X509TrustManager x509TrustManager;
+	
+    public ClientTrustManager(String keyStorePath,String keyStorePassword,String keyStoreType) throws Exception{  
+    	FileInputStream inputStream = new FileInputStream(keyStorePath);
+    	KeyStore ks = KeyStore.getInstance("JKS");
+    	ks.load(inputStream, keyStorePassword.toCharArray());
+    	TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+    	tmf.init(ks);
+    	TrustManager[] tms = tmf.getTrustManagers();
+    	for (TrustManager trustManager : tms) {
+			if(trustManager instanceof X509TrustManager)
+			{
+				x509TrustManager=(X509TrustManager) trustManager;
+			}
+		}
+    }
+
+	public void checkClientTrusted(X509Certificate[] chain, String type) throws CertificateException {
+		x509TrustManager.checkServerTrusted(chain, type);
+	}
+
+	public void checkServerTrusted(X509Certificate[] chain, String type) throws CertificateException {
+		x509TrustManager.checkClientTrusted(chain, type);
+	}
+
+	public X509Certificate[] getAcceptedIssuers() {
+		return x509TrustManager.getAcceptedIssuers();
+	}  
+}

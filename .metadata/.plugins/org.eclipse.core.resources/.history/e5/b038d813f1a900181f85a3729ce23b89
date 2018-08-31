@@ -1,0 +1,43 @@
+package com.kaisn.urlUtils;
+import java.io.File;
+import java.io.FileInputStream;
+import java.security.KeyStore;
+import java.security.KeyStore.LoadStoreParameter;
+import java.security.KeyStore.ProtectionParameter;
+import java.security.KeyStoreException;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.X509TrustManager;
+ 
+public class MyX509TrustManager implements X509TrustManager {
+ 
+	String certificateAlias;
+	public void checkClientTrusted(X509Certificate[] chain, String authType)
+			throws CertificateException {
+//		String path = "E:/Bill99QuickPay/81231015722198890.jks";
+//		File certFile = new File(path);
+//		KeyStore ks = KeyStore.getInstance("JKS");
+//		for (X509Certificate x509Certificate : chain) {
+//			certificateAlias = ks.getCertificateAlias(chain[0]);
+//		}
+//		
+//		String password = "vpos123";
+//		ks.load(new FileInputStream(certFile), password.toCharArray());
+//		KeyManagerFactory kmf = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
+
+	}
+ 
+	public void checkServerTrusted(X509Certificate[] chain, String authType)
+			throws CertificateException {
+		// TODO Auto-generated method stub
+ 
+	}
+ 
+	public X509Certificate[] getAcceptedIssuers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+ 
+}

@@ -1,0 +1,99 @@
+package com.kaisn.utils;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Properties;
+
+/**
+ * 加载属性文件工具类
+ * @author lijing
+ *
+ */
+public class PropertiesUtil {
+	
+	private static Properties properties = null;
+	
+	public static final int FILETYPE_XML=1;
+	public static final int FILETYPE_KV=1;
+	
+	private static void init() {
+		if (properties == null) {
+			synchronized (Properties.class) {
+				if (properties == null) {
+					properties = new Properties();
+				}
+			}
+		}
+	}
+	
+	/**
+	 * 获取Properties实例
+	 * @param fileName
+	 * @return
+	 */
+	public static Properties getProperties(String fileName,String type) {
+		InputStream inputStream=null;
+		try {
+			if (properties == null) {
+				synchronized (Properties.class) {
+					if (properties == null) {
+						properties = new Properties();
+						inputStream = PropertiesUtil.class.getResourceAsStream(fileName);
+						if(StringUtils.equals(type, "xml")){
+							properties.loadFromXML(inputStream);
+						}else{
+							properties.load(inputStream);
+						}
+					}
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (inputStream != null) {
+				try {
+					inputStream.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return properties;
+	}
+	
+	public static void setPropertys(Map<String,String> proMap,String fileName,String type,String comments){
+		if(proMap!=null){
+			init();
+			FileOutputStream outputStream=null;
+			try {
+				outputStream = new FileOutputStream(fileName);
+				for(Entry<String,String> pro:proMap.entrySet()){
+					properties.setProperty(pro.getKey(), pro.getValue());
+				}
+				if(StringUtils.equals(type, "xml")){
+					properties.storeToXML(outputStream, comments);
+				}else{
+					properties.store(outputStream, comments);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}finally{
+				if(outputStream!=null){
+					try {
+						outputStream.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+	}
+	
+	public static void clear(){
+		properties=null;
+	}
+	
+}

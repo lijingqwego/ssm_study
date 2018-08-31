@@ -49,7 +49,7 @@
 				and e.d_id=#{deptId,jdbcType=DECIMAL}
 			</if>
 			<if test="posId != null and posId != ''">
-				and p.p_id=#{posId,jdbcType=DECIMAL}
+				and e.p_id=#{posId,jdbcType=DECIMAL}
 			</if>
 		</where>
 		order by e.update_time desc

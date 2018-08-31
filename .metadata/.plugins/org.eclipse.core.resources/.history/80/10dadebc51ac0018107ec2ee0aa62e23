@@ -1,0 +1,10 @@
+package com.kaisn.https;
+
+import org.apache.http.impl.client.DefaultHttpClient;
+
+@SuppressWarnings("deprecation")
+public class SSLClinent extends DefaultHttpClient{
+	
+	public SSLC
+
+}

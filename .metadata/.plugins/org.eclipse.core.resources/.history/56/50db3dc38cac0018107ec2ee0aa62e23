@@ -1,0 +1,4 @@
+#\u8BC1\u4E66\u53C2\u6570\u914D\u7F6E
+keyStorePath=certificate_files\platform_certificate.jks
+keyStorePassword=asd3135
+keyStoreType=JKS

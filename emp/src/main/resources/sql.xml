@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>sql配置</comment>
+<entry key="emp.list">select * from t_emp limit 0,10</entry>
+<entry key="dept.list">select * from t_dept limit 0,10</entry>
+</properties>

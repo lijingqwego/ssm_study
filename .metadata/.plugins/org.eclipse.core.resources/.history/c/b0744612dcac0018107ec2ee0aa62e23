@@ -1,0 +1,45 @@
+package com.kaisn.https;
+
+import java.util.concurrent.TimeUnit;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLSession;
+
+import okhttp3.OkHttpClient;
+
+public class OKHttpUtils 
+{
+	
+	private static  OkHttpClient okHttpClient=null;
+	
+	public static OkHttpClient getInstance()
+	{
+		if(okHttpClient==null)
+		{
+			synchronized (OKHttpUtils.class) 
+			{
+				if(okHttpClient==null)
+				{
+					okHttpClient=new OkHttpClient();
+				}
+			}
+		}
+		
+		return okHttpClient;
+	}
+	
+	public static String doPost(String url){
+		OkHttpClient okHttpClient = new OkHttpClient.Builder()
+        .connectTimeout(20000L, TimeUnit.MILLISECONDS)
+        .readTimeout(20000L, TimeUnit.MILLISECONDS)
+        .hostnameVerifier(new HostnameVerifier() {
+            public boolean verify(String hostname, SSLSession session) {
+                return true;
+            }
+        })
+        .sslSocketFactory(sslParams.sSLSocketFactory,sslParams.trustManager)
+        .build();
+		return null;
+	}
+
+}

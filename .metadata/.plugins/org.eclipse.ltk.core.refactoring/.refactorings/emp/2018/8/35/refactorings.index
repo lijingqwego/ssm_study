@@ -1,0 +1,20 @@
+1535290906769	Copy package
+1535550456541	Rename field 'TIME_MODE_DAY'
+1535550463931	Rename field 'TIME_MODE_HOUR'
+1535550471994	Rename field 'TIME_MODE_DEFALUT'
+1535603453928	Rename type 'SSLClient'
+1535628217206	Copy file
+1535628240470	Rename resource 'cerConfig.properties'
+1535628363960	Delete element
+1535632769641	Rename compilation unit 'SSLClinent.java'
+1535656606402	Delete element
+1535690916071	Rename type 'HttpsClientUtil'
+1535690934041	Move compilation unit
+1535690938894	Delete element
+1535692183430	Delete element
+1535694626230	Rename field 'c'
+1535694952290	Rename field 'SecretKey'
+1535694969907	Rename field 'keygen'
+1535694979018	Rename field 'c'
+1535695309849	Rename type 'EncrypDES3'
+1535697621561	Delete element
