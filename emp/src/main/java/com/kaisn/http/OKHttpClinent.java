@@ -1,4 +1,4 @@
-package com.kaisn.utils;
+package com.kaisn.http;
 
 import java.io.IOException;
 import java.util.Map;
@@ -12,7 +12,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class HttpClinent {
+public class OKHttpClinent {
 
 	public static final MediaType JSON = MediaType.parse("application/json;charset=utf-8");
 

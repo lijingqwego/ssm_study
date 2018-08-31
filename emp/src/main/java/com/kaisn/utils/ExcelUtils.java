@@ -2,6 +2,7 @@ package com.kaisn.utils;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -36,8 +37,14 @@ public class ExcelUtils {
 	 * @param userList 用户列表
 	 * @param out 输出表
 	 */
-	public static void writeExcel(List<Employee> empList,String[] depts, String[] poss, ServletOutputStream out,String mode) {
+	public static void writeExcel(Map<String, Object> param, ServletOutputStream out,String mode) {
 		try {
+			//取出参数
+			@SuppressWarnings("unchecked")
+			List<Employee> empList=(List<Employee>) param.get("emps");
+			String[] depts=(String[]) param.get("depts");
+			String[] poss=(String[]) param.get("poss");
+			
 			// 1.创建工作簿
 			HSSFWorkbook workbook = new HSSFWorkbook();
 			// 1.1创建合并单元格对象

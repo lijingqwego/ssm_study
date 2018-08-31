@@ -1,4 +1,4 @@
-package com.kaisn.https;
+package com.kaisn.http;
 
 import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;

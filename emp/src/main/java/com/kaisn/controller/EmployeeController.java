@@ -158,11 +158,11 @@ public class EmployeeController {
 	@ResponseBody
 	public Msg download(@PathVariable("mode") String mode,HttpServletRequest request,HttpServletResponse response) {
 		try {
-			List<Employee> empList=null;
+			List<Employee> emps=null;
 			String fileName=null;
 			if(Constans.EXCEL_EXPORT_DATA.equals(mode))
 			{
-				empList = employeeService.getEmployeeList(null);
+				emps = employeeService.getEmployeeList(null);
 				fileName="员工列表-"+StringUtils.getUniqueString()+".xls";
 			}else{
 				fileName="清单模板-"+StringUtils.getUniqueString()+".xls";
@@ -187,7 +187,12 @@ public class EmployeeController {
 				for (int i=0;i<posListSize;i++) {
 					poss[i]=posList.get(i).getPosName();
 				}
-				ExcelUtils.writeExcel(empList, depts,poss,outputStream,mode);
+				//参数比较多，以map存放
+				Map<String, Object> param = new HashMap<String,Object>();
+				param.put("emps", emps);
+				param.put("depts", depts);
+				param.put("poss", poss);
+				ExcelUtils.writeExcel(param,outputStream,mode);
 			}
 			if (outputStream != null)
 				outputStream.close();

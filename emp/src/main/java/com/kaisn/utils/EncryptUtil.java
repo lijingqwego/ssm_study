@@ -12,7 +12,7 @@ public class EncryptUtil {
 	private static final String PASSWORD_CRYPT_KEY = "88888888";
 
 	private final static String DES = "DES";
-
+	
 	/**
 	 * 加密
 	 * @param src 数据源

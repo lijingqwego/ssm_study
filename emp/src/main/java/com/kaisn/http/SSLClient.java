@@ -1,4 +1,4 @@
-package com.kaisn.https;
+package com.kaisn.http;
 
 import java.security.SecureRandom;
 
