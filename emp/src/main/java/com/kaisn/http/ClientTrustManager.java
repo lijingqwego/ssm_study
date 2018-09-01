@@ -23,14 +23,14 @@ public class ClientTrustManager implements X509TrustManager
     {
     	Properties properties = PropertiesUtil.getProperties("/certificateConfig.properties", PropertiesUtil.FILETYPE_KV);
     	String keyStorePath=properties.getProperty("keyStorePath");
-    	String keyStorePassword=properties.getProperty("keyStorePassword");
+    	String keyStorePassword=null;//properties.getProperty("keyStorePassword");
     	String keyStoreType=properties.getProperty("keyStoreType");
     	if(StringUtils.isNotBlack(keyStorePath) && StringUtils.isNotBlack(keyStorePassword) && StringUtils.isNotBlack(keyStoreType))
     	{
+    		//√‹¬ÎΩ‚√‹
+    		keyStorePassword=EncryptUtil.decrypt(keyStorePassword);
     		InputStream inputStream = ClientTrustManager.class.getResourceAsStream(keyStorePath);
         	KeyStore ks = KeyStore.getInstance(keyStoreType);
-        	//√‹¬ÎΩ‚√‹
-        	keyStorePassword=EncryptUtil.decrypt(keyStorePassword);
         	ks.load(inputStream, keyStorePassword.toCharArray());
         	TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
         	tmf.init(ks);

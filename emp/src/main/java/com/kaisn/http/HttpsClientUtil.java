@@ -15,11 +15,16 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.kaisn.utils.EncryptUtil;
+import com.kaisn.utils.StringUtils;
+
 /* 
  * 利用HttpClient进行post请求的工具类 
  */
-public class HttpClientUtil {
-    public static String doPost(String url,Map<String,String> map) throws Exception{
+public class HttpsClientUtil {
+    public static String doPost(String url,Map<String,String> map,String token) throws Exception{
     	HttpClient httpClient = null;  
         HttpPost httpPost = null;  
         String result = null;  
@@ -36,6 +41,9 @@ public class HttpClientUtil {
                     UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list,"UTF-8");  
                     httpPost.setEntity(entity);  
                 } 
+            }
+            if(StringUtils.isNotBlack(token)){
+            	httpPost.addHeader("token", token);
             }
             HttpResponse response = httpClient.execute(httpPost);  
             if(response != null){  
@@ -73,8 +81,18 @@ public class HttpClientUtil {
     public static void main(String[] args){
     	try {
     		Map<String, String> param = new HashMap<String,String>();
-    		param.put("token", "RTHS35661sf64se8t4a6d1far8eraddvaD13a54T8E844A6SD54aedukruysTGAdfA");
-			System.out.println(doPost("https://localhost:8080/emp/list/1", null));
+    		param.put("userName", "lijing");
+    		param.put("password", EncryptUtil.encrypt("asd3135"));
+    		String result = doPost("https://localhost:8081/user/login", param,null);
+    		System.out.println("返回结果："+result);
+    		JSONObject jsonObject = JSON.parseObject(result);
+    		JSONObject extend = jsonObject.getJSONObject("extend");
+    		String token = extend.getString("token");
+    		System.out.println("token："+token);
+    		String userId = JavaWebToken.parserJavaWebToken(token);
+    		System.out.println("userId："+userId);
+    		String result2 = doGet("https://localhost:8081/emp/info/102");
+    		System.out.println("返回结果2："+result2);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

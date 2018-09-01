@@ -32,7 +32,16 @@
 			<property name="password" value="${jdbc.password}"/>
 		</bean>
 		
+		<!-- flyway配置 -->
+		<bean class="org.flywaydb.core.Flyway" init-method="migrate" depends-on="dataSource">
+			<property name="dataSource" ref="dataSource"></property>
+			<property name="baselineOnMigrate" value="true"></property>
+			<property name="locations" value="classpath:db/migration"></property>
+			<property name="encoding" value="utf-8"></property>
+		</bean>
+		
 		<!-- 配置会话工厂 借助 SqlSessionFactoryBean类 -->
+		<!-- depends-on="migrationSqlite" flyway没有执行完，其他应用不能对数据库操作 -->
 		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		
 			<property name="configLocation" value="classpath:SqlMapConfig.xml"></property>
@@ -50,7 +59,7 @@
 		</bean>
 		
 		<!-- 配置一个可以执行批量处理的SQLSession -->
-		<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" >
 			<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
 			<constructor-arg name="executorType" value="BATCH"></constructor-arg>
 		</bean>
@@ -79,7 +88,6 @@
 				<tx:method name="get*" read-only="true"/>
 			</tx:attributes>
 		</tx:advice>
-		
 		
 		<!-- spring文件的核心配置点 数据源，与mybatis框架的整合，事物控制 -->
 </beans>
