@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!-- 引入标签库 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -224,19 +225,26 @@
 	
 	
 	<div class="containner">
-		<!--标题-->
-		<div class="row"></div>
-		<div class="col-md-12">
-			<h1>员工管理系统</h1>
+		<!-- 语言切换 -->
+		<div class="row">
+			<div class="col-md-2 col-md-offset-10">
+				<a href="/index?locale=zh_CN"><spring:message code="chinese" /></a>
+				<a href="/index?locale=en_US"><spring:message code="english" /></a>
+			</div>
 		</div>
-		
+		<!--标题-->
+		<div class="row">
+			<div class="col-md-12">
+				<h1><spring:message code="platform.home.title"></spring:message></h1>
+			</div>
+		</div>
 		<!--按钮-->
 		<div class="row">
 			<div class="col-md-4 col-md-offset-8">
-				<button class="btn btn-primary" id="emp_add_modal_btn">新增</button>
-				<button class="btn btn-danger" id="emp_delete_all">删除</button>
-				<button class="btn btn-primary" id="emp_upload_modal_btn">导入</button>
-				<button class="btn btn-danger" id="emp_download_all">导出</button>
+				<button class="btn btn-primary" id="emp_add_modal_btn"><spring:message code="platform.home.add"></spring:message></button>
+				<button class="btn btn-danger" id="emp_delete_all"><spring:message code="platform.home.delete"></spring:message></button>
+				<button class="btn btn-primary" id="emp_upload_modal_btn"><spring:message code="platform.home.import"></spring:message></button>
+				<button class="btn btn-danger" id="emp_download_all"><spring:message code="platform.home.export"></spring:message></button>
 			</div>
 		</div>
 		
@@ -244,28 +252,28 @@
 		<div class="col-md-11 col-md-offset-1">
 			<form class="form-inline" role="form" id="from_search">
 			  <div class="form-group">
-			    <label for="name">姓名</label>
+			    <label for="name"><spring:message code="platform.home.name"></spring:message></label>
 			    <input type="text" class="form-control" name="empName" placeholder="请输入姓名">
 			  </div>
 			  <div class="form-group">
-			    <label for="name">性别</label>
+			    <label for="name"><spring:message code="platform.home.gender"></spring:message></label>
 			    <select class="form-control" name="gender" >
-			      <option value="">--请选择--</option>
+			      <option value="">--<spring:message code="platform.home.choose"></spring:message>--</option>
 			      <option value="M">男</option>
 			      <option value="F">女</option>
 			    </select>
 			  </div>
 			  <div class="form-group">
-			    <label for="name">部门</label>
+			    <label for="name"><spring:message code="platform.home.department"></spring:message></label>
 			    <select class="form-control" name="deptId" id="select_dept_search" >
 			    </select>
 			  </div>
 			  <div class="form-group">
-			    <label for="name">职位</label>
+			    <label for="name"><spring:message code="platform.home.position"></spring:message></label>
 			    <select class="form-control" name="posId" id="select_pos_search" >
 			    </select>
 			  </div>
-			  <button class="btn btn-primary" id="emp_search_btn">筛选</button>
+			  <button class="btn btn-primary" id="emp_search_btn"><spring:message code="platform.home.search"></spring:message></button>
 			</form>
 		</div>
 		<!--表格数据-->
@@ -277,14 +285,14 @@
 						<th>
 							<input type="checkbox" id="check_all">
 						</th> 
-							<th>员工编号</th>
-							<th>姓名</th>
-							<th>性别</th>
-							<th>邮箱</th>
-							<th>部门</th>
-							<th>职位</th>
-							<th>描述</th>
-							<th>操作</th>
+							<th><spring:message code="platform.home.empID"></spring:message></th>
+							<th><spring:message code="platform.home.name"></spring:message></th>
+							<th><spring:message code="platform.home.gender"></spring:message></th>
+							<th><spring:message code="platform.home.mail"></spring:message></th>
+							<th><spring:message code="platform.home.department"></spring:message></th>
+							<th><spring:message code="platform.home.position"></spring:message></th>
+							<th><spring:message code="platform.home.description"></spring:message></th>
+							<th><spring:message code="platform.home.operate"></spring:message></th>
 						</tr>
 					</thead>
 					<tbody>

@@ -23,7 +23,7 @@ public class ClientTrustManager implements X509TrustManager
     {
     	Properties properties = PropertiesUtil.getProperties("/certificateConfig.properties", PropertiesUtil.FILETYPE_KV);
     	String keyStorePath=properties.getProperty("keyStorePath");
-    	String keyStorePassword=null;//properties.getProperty("keyStorePassword");
+    	String keyStorePassword=properties.getProperty("keyStorePassword");
     	String keyStoreType=properties.getProperty("keyStoreType");
     	if(StringUtils.isNotBlack(keyStorePath) && StringUtils.isNotBlack(keyStorePassword) && StringUtils.isNotBlack(keyStoreType))
     	{

@@ -88,6 +88,19 @@
 				<tx:method name="get*" read-only="true"/>
 			</tx:attributes>
 		</tx:advice>
-		
 		<!-- spring文件的核心配置点 数据源，与mybatis框架的整合，事物控制 -->
+		
+		
+		<!--start 定义国际化消息 -->
+		<bean id="messageSource"
+			class="org.springframework.context.support.ResourceBundleMessageSource">
+			<!-- 其中basename用来指定properties文件的通用名 如实例中的messages_en.properties,messages_ja.properties通用名都是messages -->
+			<property name="basenames" value="locale/messages" />
+			<property name="useCodeAsDefaultMessage" value="true" />
+		</bean>
+		<!-- 获取本地 -->
+		<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+        <property name="defaultLocale" value="en_US"/>
+    </bean>
+		<!--end 定义国际化消息 -->
 </beans>
