@@ -28,7 +28,7 @@ public class UserController {
 			response.setHeader("Access-Control-Allow-Origin","*");
 			User userInfo=userService.getUserInfo(userName,password);
 			if(userInfo!=null){
-		        String token = JavaWebToken.createJavaWebToken(userInfo.getUserId()+"");// 根据存在用户的id生成token字符串
+		        String token = JavaWebToken.createJavaWebToken(String.valueOf(userInfo.getUserId()));// 根据存在用户的id生成token字符串
 				return Msg.success().add("token", token);
 			}else{
 				return Msg.fail();
