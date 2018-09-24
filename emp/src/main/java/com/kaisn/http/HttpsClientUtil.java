@@ -83,7 +83,7 @@ public class HttpsClientUtil {
     		Map<String, String> param = new HashMap<String,String>();
     		param.put("userName", "lijing");
     		param.put("password", EncryptUtil.encrypt("asd3135"));
-    		String result = doPost("https://localhost:8081/user/login", param,null);
+    		String result = doPost("http://192.168.109.129:8080/user/login", param,null);
     		System.out.println("返回结果："+result);
     		JSONObject jsonObject = JSON.parseObject(result);
     		JSONObject extend = jsonObject.getJSONObject("extend");
@@ -91,7 +91,7 @@ public class HttpsClientUtil {
     		System.out.println("token："+token);
     		String userId = JavaWebToken.parserJavaWebToken(token);
     		System.out.println("userId："+userId);
-    		String result2 = doGet("https://localhost:8081/emp/info/102");
+    		String result2 = doGet("http://192.168.109.129:8080/emp/info/102");
     		System.out.println("返回结果2："+result2);
 		} catch (Exception e) {
 			e.printStackTrace();

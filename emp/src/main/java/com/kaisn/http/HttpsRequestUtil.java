@@ -198,7 +198,7 @@ public class HttpsRequestUtil {
     		Map<String, String> param = new HashMap<String,String>();
     		param.put("userName", "lijing");
     		param.put("password", EncryptUtil.encrypt("asd3135"));
-    		String result = doPost("http://localhost:8080/user/login", null, param, null);
+    		String result = doPost("https://192.168.109.129:8081/user/login", null, param, null);
     		System.out.println("返回结果："+result);
     		JSONObject jsonObject = JSON.parseObject(result);
     		JSONObject extend = jsonObject.getJSONObject("extend");
@@ -209,7 +209,7 @@ public class HttpsRequestUtil {
     		/**********************************************************/
     		Map<String, String> header = new HashMap<String,String>();
     		header.put("token", token);
-    		String result2 = doGet("http://localhost:8080/user/tokenConfirm",header,null);
+    		String result2 = doGet("https://192.168.109.129:8081/user/tokenConfirm",header,null);
     		System.out.println("返回结果2："+result2);
 		} catch (Exception e) {
 			e.printStackTrace();

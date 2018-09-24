@@ -31,7 +31,7 @@ public class PropertiesTest {
 		/*Map<String, String> proMap = new HashMap<String,String>();
 		proMap.put("getEmpList", "select * from t_emp limit 0,10");
 		PropertiesUtil.setPropertys(proMap, "src/main/resources/sql.xml", "xml","sql配置");*/
-		Properties properties = PropertiesUtil.getProperties(FILE_NAME_AND_PATH,PropertiesUtil.FILETYPE_KV);
+		Properties properties = PropertiesUtil.getProperties(FILE_NAME_AND_PATH,PropertiesUtil.defaultType);
 		String driver = properties.getProperty("jdbc.driver");
 		String url = properties.getProperty("jdbc.url");
 		String username = properties.getProperty("jdbc.username");
@@ -42,7 +42,7 @@ public class PropertiesTest {
 			Class.forName(driver);
 			conn=DriverManager.getConnection(url, username, password);
 			PropertiesUtil.clear();
-			properties = PropertiesUtil.getProperties("/sql.xml", PropertiesUtil.FILETYPE_XML);
+			properties = PropertiesUtil.getProperties("/sql.xml", PropertiesUtil.xmlType);
 			String sql = properties.getProperty("emp.list");
 			PropertiesUtil.clear();
 			PreparedStatement prepareStatement = conn.prepareStatement(sql);
@@ -56,7 +56,7 @@ public class PropertiesTest {
 				proMap.put("emp_name", emp_name);
 				proMap.put("email", email);
 			}
-			PropertiesUtil.setPropertys(proMap, "src/main/resources/result.properties", PropertiesUtil.FILETYPE_XML,"查询结果");
+			PropertiesUtil.setPropertys(proMap, "src/main/resources/result.properties", PropertiesUtil.xmlType,"查询结果");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

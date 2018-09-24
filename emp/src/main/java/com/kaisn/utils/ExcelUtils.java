@@ -78,13 +78,13 @@ public class ExcelUtils {
 				cell2.setCellValue(titles[i]);
 			}
 			//性别下拉选项
-			setDropMenu(sheet,genders,2, Constans.EXCEL_IMPORT_LINENUMBER, 1, 1);
+			setDropMenu(sheet,genders,2, Constans.Excel_Import_LineNumber, 1, 1);
 			//部门下拉选项
-			setDropMenu(sheet,depts,2, Constans.EXCEL_IMPORT_LINENUMBER, 3, 3);
+			setDropMenu(sheet,depts,2, Constans.Excel_Import_LineNumber, 3, 3);
 			//职位下拉选项
-			setDropMenu(sheet,poss,2, Constans.EXCEL_IMPORT_LINENUMBER, 4, 4);
+			setDropMenu(sheet,poss,2, Constans.Excel_Import_LineNumber, 4, 4);
 			//如果mode=2导出数据
-			if(Constans.EXCEL_EXPORT_DATA.equals(mode)){
+			if(Constans.Excel_Export_Data.equals(mode)){
 				// 4.操作单元格;将用户列表写入excel
 				if (empList != null) {
 					for (int j = 0; j < empList.size(); j++) {
@@ -132,7 +132,8 @@ public class ExcelUtils {
 		return style;
 	}
 
-	public static List<Employee> readExcel(InputStream inputStream, String excelFileName, Map<String, Long> deptMap) {
+	public static List<Employee> readExcel(InputStream inputStream, String excelFileName,
+			Map<String, Long> deptMap,Map<String,Long> posMap) {
 		List<Employee> emps = new ArrayList<Employee>();
 		// 1.创建输入流
 		try {
@@ -146,7 +147,7 @@ public class ExcelUtils {
 			if (sheet.getPhysicalNumberOfRows() > 2) {
 				Employee emp = null;
 				//最多导入1000行数据
-				int count=Math.min(Constans.EXCEL_IMPORT_LINENUMBER+1, sheet.getPhysicalNumberOfRows());
+				int count=Math.min(Constans.Excel_Import_LineNumber+1, sheet.getPhysicalNumberOfRows());
 				// 跳过前两行
 				for (int k = 2; k < count; k++) {
 					// 读取单元格
@@ -164,9 +165,12 @@ public class ExcelUtils {
 					// 所属部门
 					Cell cell3 = row0.getCell(3);
 					emp.setDeptId(deptMap.get(cell3.getStringCellValue()));
-					// 描述
+					// 职位
 					Cell cell4 = row0.getCell(4);
-					emp.setDescription(cell4.getStringCellValue());
+					emp.setPosId(posMap.get(cell4.getStringCellValue()));
+					// 描述
+					Cell cell5 = row0.getCell(5);
+					emp.setDescription(cell5.getStringCellValue());
 					
 					emps.add(emp);
 				}

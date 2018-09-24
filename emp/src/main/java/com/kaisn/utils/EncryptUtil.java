@@ -95,7 +95,7 @@ public class EncryptUtil {
 	 * @param b
 	 * @return
 	 */
-	public static String byte2hex(byte[] b) {
+	private static String byte2hex(byte[] b) {
 		String hs = "";
 		String stmp = "";
 		for (int n = 0; n < b.length; n++) {
@@ -108,7 +108,7 @@ public class EncryptUtil {
 		return hs.toUpperCase();
 	}
 
-	public static byte[] hex2byte(byte[] b) {
+	private static byte[] hex2byte(byte[] b) {
 		if ((b.length % 2) != 0)
 			throw new IllegalArgumentException("长度不是偶数");
 		byte[] b2 = new byte[b.length / 2];

@@ -160,7 +160,7 @@ public class EmployeeController {
 		try {
 			List<Employee> emps=null;
 			String fileName=null;
-			if(Constans.EXCEL_EXPORT_DATA.equals(mode))
+			if(Constans.Excel_Export_Data.equals(mode))
 			{
 				emps = employeeService.getEmployeeList(null);
 				fileName="员工列表-"+StringUtils.getUniqueString()+".xls";
@@ -215,7 +215,12 @@ public class EmployeeController {
 			for (Department dept : deptList) {
 				deptMap.put(dept.getDeptName(),dept.getDeptId());
 			}
-			List<Employee> emps = ExcelUtils.readExcel(inputStream, filePath + filename,deptMap);
+			List<Position> posList = positionService.getPositionList();
+			Map<String, Long> posMap = new HashMap<String,Long>();
+			for (Position pos : posList) {
+				posMap.put(pos.getPosName(), pos.getPosId());
+			}
+			List<Employee> emps = ExcelUtils.readExcel(inputStream, filePath + filename,deptMap,posMap);
 			employeeService.addEmployeeList(emps);
 		} catch (IOException e) {
 			return Msg.fail();

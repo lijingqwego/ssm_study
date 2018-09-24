@@ -18,8 +18,8 @@ public class PropertiesUtil {
 	private static Properties properties = null;
 
 	// 文件类型
-	public static final int FILETYPE_XML = 1;//xml
-	public static final int FILETYPE_KV = 0;//key=value
+	public static final int xmlType = 1;//xml
+	public static final int defaultType = 0;//key=value
 
 	/**
 	 * 实例化对象（单例模式）
@@ -47,7 +47,7 @@ public class PropertiesUtil {
 			init();
 			inputStream = PropertiesUtil.class.getResourceAsStream(fileName);
 			switch (type) {
-			case FILETYPE_XML:
+			case xmlType:
 				properties.loadFromXML(inputStream);
 				break;
 			default:
@@ -86,7 +86,7 @@ public class PropertiesUtil {
 					properties.setProperty(pro.getKey(), pro.getValue());
 				}
 				switch (type) {
-				case FILETYPE_XML:
+				case xmlType:
 					properties.storeToXML(outputStream, comments);
 					break;
 				default:

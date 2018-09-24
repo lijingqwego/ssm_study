@@ -95,7 +95,7 @@
 		<bean id="messageSource"
 			class="org.springframework.context.support.ResourceBundleMessageSource">
 			<!-- 其中basename用来指定properties文件的通用名 如实例中的messages_en.properties,messages_ja.properties通用名都是messages -->
-			<property name="basenames" value="locale/messages" />
+			<property name="basenames" value="local/messages" />
 			<property name="useCodeAsDefaultMessage" value="true" />
 		</bean>
 		<!-- 获取本地 -->

@@ -22,7 +22,7 @@ function to_page(curPage) {
 		async:false,
 		type : "POST",
 		success : function(result) {
-			console.log(result);
+			//console.log(result);
 			//return ;
 			//1.解析并显示员工数据
 			build_emps_table(result);

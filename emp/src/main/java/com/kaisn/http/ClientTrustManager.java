@@ -21,7 +21,7 @@ public class ClientTrustManager implements X509TrustManager
 	
     public ClientTrustManager() throws Exception
     {
-    	Properties properties = PropertiesUtil.getProperties("/certificateConfig.properties", PropertiesUtil.FILETYPE_KV);
+    	Properties properties = PropertiesUtil.getProperties("/certificateConfig.properties", PropertiesUtil.defaultType);
     	String keyStorePath=properties.getProperty("keyStorePath");
     	String keyStorePassword=properties.getProperty("keyStorePassword");
     	String keyStoreType=properties.getProperty("keyStoreType");
