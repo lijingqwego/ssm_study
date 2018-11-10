@@ -10,9 +10,14 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+
+import com.kaisn.dao.StudentMapper;
+import com.kaisn.pojo.Student;
+import com.kaisn.utils.MapperUtil;
 
 class UpdateDialog extends JDialog implements ActionListener {
 
@@ -68,7 +73,7 @@ class UpdateDialog extends JDialog implements ActionListener {
 		addBut.setActionCommand(Constans.Action.UPDATE);
 		JButton cancelBut = new JButton("取消");
 		cancelBut.addActionListener(this);
-		cancelBut.setActionCommand("cancle");
+		cancelBut.setActionCommand(Constans.Action.CANCLE);
 
 		southPanel.add(addBut);
 		southPanel.add(cancelBut);
@@ -87,14 +92,29 @@ class UpdateDialog extends JDialog implements ActionListener {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals(Constans.Action.UPDATE)) {
-			Object[] values = new Object[6];
-			values[5] = textFields[0].getText();
-			values[0] = textFields[1].getText();
-			values[1] = genderBox.getSelectedIndex();
-			values[2] = textFields[3].getText();
-			values[3] = textFields[4].getText();
-			values[4] = textFields[5].getText();
-			DbUtils.updateTable("update t_student set name=?,gender=?,age=?,place=?,dept=? where no=?", values);
+			String age = textFields[3].getText();
+			if(age!=null && !age.matches("^(?:0|[1-9][0-9]?|100)$")){
+				JOptionPane.showMessageDialog(this, "输入的年龄必须是0~100之间的数字");
+				return ;
+			}
+//			Object[] values = new Object[6];
+//			values[5] = textFields[0].getText();
+//			values[0] = textFields[1].getText();
+//			values[1] = genderBox.getSelectedIndex();
+//			values[2] = textFields[3].getText();
+//			values[3] = textFields[4].getText();
+//			values[4] = textFields[5].getText();
+			StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
+			Student student = new Student();
+			student.setNo(textFields[0].getText());
+			student.setName(textFields[1].getText());
+			student.setGender(genderBox.getSelectedIndex()+"");
+			student.setAge(textFields[3].getText());
+			student.setPlace(textFields[4].getText());
+			student.setDept(textFields[5].getText());
+			mapper.updateStudent(student);
+			MapperUtil.closeUpdSession();
+			//DbUtils.updateTable("update t_student set name=?,gender=?,age=?,place=?,dept=? where no=?", values);
 			this.dispose();
 		} else if (e.getActionCommand().equals(Constans.Action.CANCLE)) {
 			this.dispose();

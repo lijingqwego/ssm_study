@@ -12,6 +12,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
+import com.kaisn.dao.StudentMapper;
+import com.kaisn.utils.MapperUtil;
+
 public class AppMainUI extends JFrame implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
@@ -88,6 +91,7 @@ public class AppMainUI extends JFrame implements ActionListener {
 			String name = searchField.getText().trim();
 			String sql = "select * from t_student where name like ?";
 			comInfo = new CommonTableModel(sql, new Object[] { "%"+name+"%" });
+//			comInfo = new CommonTableModel(name);
 			tabel.setModel(comInfo);
 		} else if (e.getActionCommand().equals(Constans.Action.SELECT_ALL)) {// 查询全部
 			comInfo = new CommonTableModel();
@@ -117,7 +121,10 @@ public class AppMainUI extends JFrame implements ActionListener {
 				return;
 			}
 			Object no = comInfo.getValueAt(row, 0);
-			DbUtils.updateTable("delete from t_student where no=?", new Object[] { no });
+			StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
+			mapper.deleteStudent(no.toString());
+			//MapperUtil.closeUpdSession();
+			//DbUtils.updateTable("delete from t_student where no=?", new Object[] { no });
 			comInfo = new CommonTableModel();
 			tabel.setModel(comInfo);
 		}

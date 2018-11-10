@@ -10,9 +10,14 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+
+import com.kaisn.dao.StudentMapper;
+import com.kaisn.pojo.Student;
+import com.kaisn.utils.MapperUtil;
 
 class AddDialog extends JDialog implements ActionListener {
 	
@@ -62,7 +67,7 @@ class AddDialog extends JDialog implements ActionListener {
 		addBut.setActionCommand(Constans.Action.ADD);
 		JButton cancelBut = new JButton("取消");
 		cancelBut.addActionListener(this);
-		cancelBut.setActionCommand("cancle");
+		cancelBut.setActionCommand(Constans.Action.CANCLE);
 
 		southPanel.add(addBut);
 		southPanel.add(cancelBut);
@@ -81,16 +86,36 @@ class AddDialog extends JDialog implements ActionListener {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals(Constans.Action.ADD)) {
-			Object[] values=new Object[6];
-			for (int i = 0; i < textFields.length; i++) {
-				if(i==2){
-					values[i]=genderBox.getSelectedIndex();
-					continue;
-				}
-				values[i]=textFields[i].getText();
+			String no = textFields[0].getText();
+			String age = textFields[3].getText();
+			if(no!=null && !no.matches("[0-9]{0,5}")){
+				JOptionPane.showMessageDialog(this, "输入的编号必须是小于5位的数字");
+				return ;
 			}
-			DbUtils.updateTable("insert into t_student values(?,?,?,?,?,?)", values);
+			if(age!=null && !age.matches("^(?:0|[1-9][0-9]?|100)$")){
+				JOptionPane.showMessageDialog(this, "输入的年龄必须是0~100之间的数字");
+				return ;
+			}
+//			Object[] values=new Object[6];
+//			for (int i = 0; i < textFields.length; i++) {
+//				if(i==2){
+//					values[i]=genderBox.getSelectedIndex();
+//					continue;
+//				}
+//				values[i]=textFields[i].getText();
+//			}
+			StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
+			Student student = new Student();
+			student.setNo(no);
+			student.setName(textFields[1].getText());
+			student.setGender(genderBox.getSelectedIndex()+"");
+			student.setAge(age);
+			student.setPlace(textFields[4].getText());
+			student.setDept(textFields[5].getText());
+			mapper.addEmpolyee(student);
+			//DbUtils.updateTable("insert into t_student values(?,?,?,?,?,?)", values);
 			this.dispose();
+//			MapperUtil.closeUpdSession();
 		} else if (e.getActionCommand().equals(Constans.Action.CANCLE)) {
 			this.dispose();
 		}
