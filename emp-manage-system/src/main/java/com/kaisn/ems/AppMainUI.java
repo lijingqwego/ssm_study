@@ -2,8 +2,15 @@ package com.kaisn.ems;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Vector;
 
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -11,8 +18,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.filechooser.FileSystemView;
 
 import com.kaisn.dao.StudentMapper;
+import com.kaisn.pojo.Student;
+import com.kaisn.utils.ExcelUtils;
 import com.kaisn.utils.MapperUtil;
 
 public class AppMainUI extends JFrame implements ActionListener {
@@ -49,10 +59,18 @@ public class AppMainUI extends JFrame implements ActionListener {
 		JButton searchAllBut = new JButton("查询全部");
 		searchAllBut.addActionListener(this);
 		searchAllBut.setActionCommand(Constans.Action.SELECT_ALL);
+		JButton exportBut = new JButton("导出");
+		exportBut.addActionListener(this);
+		exportBut.setActionCommand(Constans.Action.EXPORT);
+		JButton importBut = new JButton("导入");
+		importBut.addActionListener(this);
+		importBut.setActionCommand(Constans.Action.IMPORT);
 		northPanel.add(nameLabel);
 		northPanel.add(searchField);
 		northPanel.add(searchBut);
 		northPanel.add(searchAllBut);
+		northPanel.add(exportBut);
+		northPanel.add(importBut);
 
 		JPanel southPanel = new JPanel();
 		JButton addBut = new JButton("添加");
@@ -96,7 +114,50 @@ public class AppMainUI extends JFrame implements ActionListener {
 		} else if (e.getActionCommand().equals(Constans.Action.SELECT_ALL)) {// 查询全部
 			comInfo = new CommonTableModel();
 			tabel.setModel(comInfo);
-		} else if (e.getActionCommand().equals(Constans.Action.DIALOG_ADD)) {
+		} else if (e.getActionCommand().equals(Constans.Action.EXPORT)) {// 导出数据
+			try {
+				FileSystemView fsv = FileSystemView.getFileSystemView();
+				File deskDirFile = fsv.getHomeDirectory();
+				File file = new File(deskDirFile.getAbsolutePath(),"学生列表-"+System.currentTimeMillis()+".xls");
+				FileOutputStream out=new FileOutputStream(file);
+				StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
+				String name = searchField.getText().trim();
+				Vector<Student> students = mapper.getStudentList(name);
+				Map<String, Object> param = new HashMap<String,Object>();
+				param.put("title", Constans.TITLES);
+				param.put("students", students);
+				ExcelUtils.writeExcel(param, out, Constans.Excel_Export_Data);
+				out.close();
+			} catch (Exception e1) {
+				e1.printStackTrace();
+				JOptionPane.showMessageDialog(this, "学生列表.xls 导出失败");
+			}
+			JOptionPane.showMessageDialog(this, "学生列表.xls 已成功导出到桌面");
+		}else if (e.getActionCommand().equals(Constans.Action.IMPORT)) {//导入数据
+			try {
+				JFileChooser jfc=new JFileChooser();  
+				jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );  
+				jfc.showDialog(new JLabel(), "选择");  
+				File file=jfc.getSelectedFile();  
+				if(file.isDirectory()){  
+				    System.out.println("文件夹:"+file.getAbsolutePath());  
+				}else if(file.isFile()){  
+				    System.out.println("文件:"+file.getAbsolutePath());  
+				}  
+				FileInputStream inputStream = new FileInputStream(file);
+				Vector<Student> students = ExcelUtils.readExcel(inputStream, jfc.getSelectedFile().getName());
+				StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
+				mapper.addStudentList(students);
+				MapperUtil.closeUpdSession();
+			} catch (Exception e1) {
+				e1.printStackTrace();
+				JOptionPane.showMessageDialog(this, "导入数据失败");
+				return;
+			}
+			JOptionPane.showMessageDialog(this, "已成功导入数据");
+			comInfo = new CommonTableModel();
+			tabel.setModel(comInfo);
+		}else if (e.getActionCommand().equals(Constans.Action.DIALOG_ADD)) {
 			new AddDialog(this, "添加学生信息", true);
 			comInfo = new CommonTableModel();
 			tabel.setModel(comInfo);

@@ -112,7 +112,7 @@ class AddDialog extends JDialog implements ActionListener {
 			student.setAge(age);
 			student.setPlace(textFields[4].getText());
 			student.setDept(textFields[5].getText());
-			mapper.addEmpolyee(student);
+			mapper.addStudent(student);
 			//DbUtils.updateTable("insert into t_student values(?,?,?,?,?,?)", values);
 			this.dispose();
 			MapperUtil.closeUpdSession();

@@ -12,7 +12,9 @@ public interface StudentMapper {
 	
 	Student getStudentInfo(@Param("no")String no);
 	
-	void addEmpolyee(Student student);
+	void addStudent(Student student);
+	
+	void addStudentList(Vector<Student> students);
 	
 	void deleteStudent(@Param("no")String no);
 	

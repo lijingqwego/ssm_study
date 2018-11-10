@@ -1,7 +1,15 @@
 package com.kaisn.pojo;
 
-import com.kaisn.dao.StudentMapper;
-import com.kaisn.utils.MapperUtil;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.swing.filechooser.FileSystemView;
+
+import com.kaisn.ems.Constans;
+import com.kaisn.utils.ExcelUtils;
 
 public class Student {
 	
@@ -60,10 +68,19 @@ public class Student {
 		this.dept = dept;
 	}
 
-	public static void main(String[] args) {
-		StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
-		mapper.deleteStudent("1031");
-		MapperUtil.closeUpdSession();
+	public static void main(String[] args) throws FileNotFoundException {
+//		StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
+//		mapper.deleteStudent("1031");
+//		MapperUtil.closeUpdSession();
+		
+		FileSystemView fsv = FileSystemView.getFileSystemView();
+		File com=fsv.getHomeDirectory();    //这便是读取桌面路径的方法了
+		File file = new File(com.getAbsolutePath(),"学生列表.xls");
+		FileOutputStream out=new FileOutputStream(file);
+		Map<String, Object> param = new HashMap<String,Object>();
+		param.put("title", Constans.TITLES);
+		ExcelUtils.writeExcel(param, out, Constans.Excel_Export_Template);	
+		System.out.println(com.getPath());
 	}
 
 }

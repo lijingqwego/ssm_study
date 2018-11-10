@@ -1,3 +1,5 @@
 1541681666605	Rename resource 'SqlMapConfig.xml'
 1541681733136	Delete element
 1541681739813	Rename resource 'SqlMapConfig2.xml'
+1541857407872	Rename local variable 'j'
+1541858023606	Rename local variable 'k'

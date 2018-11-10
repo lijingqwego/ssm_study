@@ -16,6 +16,8 @@
 		<mybatis.version>3.4.2</mybatis.version>
 		<druid.version>1.0.18</druid.version>
 		<log4j.version>1.2.17</log4j.version>
+		<poi.version>3.17</poi.version>
+		<poi-ooxml.version>3.9</poi-ooxml.version>
 	</properties>
 
 	<dependencies>
@@ -45,6 +47,18 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
+		</dependency>
+		
+		<!-- poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi-ooxml.version}</version>
 		</dependency>
 	</dependencies>
 </project>
