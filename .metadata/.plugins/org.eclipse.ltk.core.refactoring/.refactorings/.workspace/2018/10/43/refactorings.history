@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;mobpush-api-java-client&apos;" deleteContents="true" description="Delete resource &apos;mobpush-api-java-client&apos;" element1="/mobpush-api-java-client" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1540559436385"/>
+</session>

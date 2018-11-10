@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaisn.dao.UserMapper">
+    <resultMap id="user" type="com.kaisn.pojo.User">
+    	<id column="user_id" jdbcType="DECIMAL" property="userId" />
+   		<result column="userName" jdbcType="VARCHAR" property="username" />
+   		<result column="password" jdbcType="VARCHAR" property="password" />
+   		<result column="audience" jdbcType="VARCHAR" property="audience" />
+    </resultMap>
+    
+    <select id="getUserInfo" parameterType="java.util.Map" resultType="com.kaisn.pojo.User">
+    	select user_id,username,audience from t_user 
+    	where 
+    	username=#{userName,jdbcType=VARCHAR}
+    	and password=#{password,jdbcType=VARCHAR}
+    </select>
+</mapper>

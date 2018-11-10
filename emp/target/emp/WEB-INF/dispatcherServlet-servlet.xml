@@ -27,6 +27,15 @@
 		<!-- 配置的是虚拟路径 -->
 		<!-- <property name="uploadTempDir" value="/uploadFile/temp"/> -->
 	</bean>
+	
+	<!-- 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 --> 
+	<mvc:interceptors>
+		<!-- Changes the locale when a 'locale' request parameter is sent; e.g.  /?locale=de -->
+		<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+			<property name="paramName" value="locale" />
+		</bean>
+	</mvc:interceptors>
+	
 	<!-- 两个标准配置 -->
 	<!-- 将springmvc不能处理的请求交给tomcat -->
 	<mvc:default-servlet-handler />

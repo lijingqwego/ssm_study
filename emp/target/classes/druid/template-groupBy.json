@@ -1,0 +1,14 @@
+{
+  "queryType": "groupBy",
+  "dataSource" : "%%dataSource%%",
+  "granularity": "all",
+  "intervals" : ["%%intervals%%"],
+  "dimensions": %%dimensions%%,
+  "limitSpec": { "type": "default", "limit": %%limit%%, "columns": %%columns%% },
+  "aggregations" : [
+    {
+      "type" : "count",
+      "name" : "count"
+    }
+  ]
+}

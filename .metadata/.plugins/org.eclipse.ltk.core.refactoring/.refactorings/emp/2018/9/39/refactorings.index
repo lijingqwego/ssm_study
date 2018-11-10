@@ -1,0 +1,10 @@
+1538060244491	Rename local variable 'jsonObject5'
+1538060261044	Rename local variable 'doGet'
+1538060319733	Rename local variable 'jsonObject2'
+1538136356309	Rename resource 'query-with-topN.json'
+1538137420173	Move compilation unit
+1538138178895	Rename local variable 'inputStream'
+1538139160954	Rename type 'ResourceReader'
+1538142089730	Copy file
+1538142392580	Rename method 'getJsonParam'
+1538143844155	Copy file

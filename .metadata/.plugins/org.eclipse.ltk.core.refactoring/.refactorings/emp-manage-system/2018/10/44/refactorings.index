@@ -1,0 +1,22 @@
+1540692531014	Rename field 'containers'
+1540708409871	Copy compilation unit
+1540708502625	Rename type 'StuTableModel'
+1540709691952	Rename method 'selectEmployee'
+1540711340919	Convert local variable 'genderBox' to field
+1540711483794	Rename method 'updateEmployee'
+1540716108343	Rename local variable 'fck'
+1540716126433	Rename local variable 'ckm'
+1540716153582	Rename local variable 'msck'
+1540717330544	Rename type 'Xiugai'
+1540722356755	Delete elements
+1540730729238	Delete element
+1540731045893	Rename field 'ColnumName'
+1540731062781	Rename field 'select_sql'
+1540731529009	Rename type 'ComTableModel'
+1540733761379	Copy package
+1540733769652	Delete elements
+1540733939859	Rename resource 'ItemsMapper.xml'
+1540734910395	Move file
+1540734916647	Delete element
+1540735058858	Move files
+1540735064310	Delete element

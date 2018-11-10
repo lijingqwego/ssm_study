@@ -1,0 +1,20 @@
+package com.kaisn.dao;
+
+import java.util.Vector;
+
+import org.apache.ibatis.annotations.Param;
+
+import com.kaisn.pojo.Student;
+
+public interface StudentMapper {
+
+	Vector<Vector<Object>> getStudentList(@Param("name") String name);
+	
+	Student getStudentInfo(@Param("no")Integer no);
+	
+	void addEmpolyee(Student student);
+	
+	void deleteStudent(@Param("no")Integer no);
+	
+	void updateStudent(Student student);
+}

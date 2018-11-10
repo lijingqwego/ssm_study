@@ -18,11 +18,11 @@ $(function() {
 function to_page(curPage) {
 	$.ajax({
 		url : appPath+"/emp/list/"+curPage,
-		data:$("#from_search").serialize(),
+		//data:$("#from_search").serialize(),
 		async:false,
-		type : "POST",
+		type : "GET",
 		success : function(result) {
-			console.log(result);
+			//console.log(result);
 			//return ;
 			//1.解析并显示员工数据
 			build_emps_table(result);

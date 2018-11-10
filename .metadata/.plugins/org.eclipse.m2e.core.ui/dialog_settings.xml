@@ -33,6 +33,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Users\lijing\workspace\mobpush-api-java-client-master"/>
+			<item value="D:\360极速浏览器下载\mobpush-api-java-client-master"/>
 			<item value="D:\Users\lijing\workspace\ssm_crud\ssm_crud_20180715"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -69,12 +71,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.kaisn.emp_manage_system"/>
 			<item value="com.kaisn.emp"/>
 		</list>
 		<list key="groupId">
 			<item value="com.kaisn"/>
 		</list>
 		<list key="artifactId">
+			<item value="emp-manage-system"/>
 			<item value="emp"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -86,6 +90,7 @@
 			<item value="[name]"/>
 		</list>
 		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
 			<item value="emp.1.0"/>
 		</list>
 	</section>
