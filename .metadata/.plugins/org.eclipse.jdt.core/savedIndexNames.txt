@@ -1,7 +1,6 @@
 INDEX VERSION 1.130+D:\Users\lijing\workspace\ssm_crud\ssm_study\.metadata\.plugins\org.eclipse.jdt.core
 3455446037.index
 1257714604.index
-2483936957.index
 1712027309.index
 1147433200.index
 3215786330.index

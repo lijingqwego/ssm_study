@@ -22,6 +22,7 @@ import javax.swing.filechooser.FileSystemView;
 
 import com.kaisn.dao.StudentMapper;
 import com.kaisn.pojo.Student;
+import com.kaisn.utils.Constans;
 import com.kaisn.utils.ExcelUtils;
 import com.kaisn.utils.MapperUtil;
 
@@ -107,9 +108,9 @@ public class AppMainUI extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals(Constans.Action.SEARCH)) {// 查询
 			String name = searchField.getText().trim();
-			String sql = "select * from t_student where name like ?";
-			comInfo = new CommonTableModel(sql, new Object[] { "%"+name+"%" });
-//			comInfo = new CommonTableModel(name);
+//			String sql = "select * from t_student where name like ?";
+//			comInfo = new CommonTableModel(sql, new Object[] { "%"+name+"%" });
+			comInfo = new CommonTableModel(name);
 			tabel.setModel(comInfo);
 		} else if (e.getActionCommand().equals(Constans.Action.SELECT_ALL)) {// 查询全部
 			comInfo = new CommonTableModel();

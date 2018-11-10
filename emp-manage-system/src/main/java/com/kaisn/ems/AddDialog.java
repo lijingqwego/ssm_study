@@ -17,6 +17,7 @@ import javax.swing.SwingConstants;
 
 import com.kaisn.dao.StudentMapper;
 import com.kaisn.pojo.Student;
+import com.kaisn.utils.Constans;
 import com.kaisn.utils.MapperUtil;
 
 class AddDialog extends JDialog implements ActionListener {

@@ -6,6 +6,7 @@ import javax.swing.table.AbstractTableModel;
 
 import com.kaisn.dao.StudentMapper;
 import com.kaisn.pojo.Student;
+import com.kaisn.utils.DbUtils;
 import com.kaisn.utils.MapperUtil;
 
 class CommonTableModel extends AbstractTableModel 
