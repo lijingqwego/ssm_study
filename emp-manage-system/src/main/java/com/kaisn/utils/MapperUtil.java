@@ -11,8 +11,9 @@ public class MapperUtil {
 	
 	private static final String config="SqlMapConfig.xml";
 	
-	private static SqlSession getSession() {
-		SqlSession session=null;
+	private static SqlSession session=null;
+	
+	private static void initSession() {
 		try {
 			InputStream inputStream = Resources.getResourceAsStream(config);
 			SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
@@ -20,23 +21,20 @@ public class MapperUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return session;
 	}
 	public static <T> T getMapper(Class<T> type){
-		SqlSession session = getSession();
+		initSession();
 		T mapper = session.getMapper(type);
 		return mapper;
 	}
 	
 	public static void closeSession(){
-		SqlSession session = getSession();
 		if(session!=null){
 			session.close();
 		}
 	}
 	
 	public static void closeUpdSession(){
-		SqlSession session = getSession();
 		if(session!=null){
 			session.commit();
 			session.close();

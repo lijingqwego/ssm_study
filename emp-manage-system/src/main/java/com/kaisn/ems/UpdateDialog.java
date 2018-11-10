@@ -53,7 +53,7 @@ class UpdateDialog extends JDialog implements ActionListener {
 				genderBox = new JComboBox<String>();
 				genderBox.addItem("男");
 				genderBox.addItem("女 ");
-				genderBox.setSelectedIndex(com.getValueAt(row, i).equals("男") ? 0 : 1);
+				genderBox.setSelectedIndex(com.getValueAt(row, i).equals("女") ? 1 : 0);
 				jPanel.add(genderBox);
 				break;
 			default:

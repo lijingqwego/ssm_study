@@ -7494,3 +7494,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.security 1 0 2018-11-10 11:03:48.311
 !MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-10 14:37:11.764
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-11-10 14:37:11.765
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

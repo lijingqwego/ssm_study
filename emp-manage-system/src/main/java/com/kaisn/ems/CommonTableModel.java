@@ -70,7 +70,7 @@ class CommonTableModel extends AbstractTableModel
 				Vector<Object> vector = new Vector<Object>();
 				vector.add(student.getNo());
 				vector.add(student.getName());
-				vector.add(student.getGender());
+				vector.add("1".equals(student.getGender())?"女":"男");
 				vector.add(student.getAge());
 				vector.add(student.getPlace());
 				vector.add(student.getDept());

@@ -123,7 +123,7 @@ public class AppMainUI extends JFrame implements ActionListener {
 			Object no = comInfo.getValueAt(row, 0);
 			StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
 			mapper.deleteStudent(no.toString());
-			//MapperUtil.closeUpdSession();
+			MapperUtil.closeUpdSession();
 			//DbUtils.updateTable("delete from t_student where no=?", new Object[] { no });
 			comInfo = new CommonTableModel();
 			tabel.setModel(comInfo);

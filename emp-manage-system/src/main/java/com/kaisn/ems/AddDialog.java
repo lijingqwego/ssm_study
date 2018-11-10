@@ -115,7 +115,7 @@ class AddDialog extends JDialog implements ActionListener {
 			mapper.addEmpolyee(student);
 			//DbUtils.updateTable("insert into t_student values(?,?,?,?,?,?)", values);
 			this.dispose();
-//			MapperUtil.closeUpdSession();
+			MapperUtil.closeUpdSession();
 		} else if (e.getActionCommand().equals(Constans.Action.CANCLE)) {
 			this.dispose();
 		}

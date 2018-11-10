@@ -62,9 +62,8 @@ public class Student {
 
 	public static void main(String[] args) {
 		StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
-		Student studentInfo = mapper.getStudentInfo("1031");
-		String name2 = studentInfo.getName();
-		System.out.println(name2);
+		mapper.deleteStudent("1031");
+		MapperUtil.closeUpdSession();
 	}
 
 }
