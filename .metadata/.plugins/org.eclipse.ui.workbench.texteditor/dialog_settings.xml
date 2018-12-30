@@ -9,22 +9,25 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Student" key="selection"/>
+		<item value="xssf" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Employee"/>
-			<item value="mybatis-generator.version"/>
-			<item value="log4j.version"/>
-			<item value="mybatis.version"/>
-			<item value="messageType"/>
-			<item value="horizontalAlignment"/>
-			<item value="layoutMgr"/>
-			<item value="&quot;"/>
+			<item value="XSSF"/>
+			<item value="DataValidationHelper"/>
+			<item value="setDropMenu"/>
+			<item value="HIDE_SHEET_NAME_PROVINCE"/>
+			<item value="createExcelMo"/>
+			<item value="getDataValidationByDate"/>
+			<item value="emp"/>
+			<item value="empList"/>
 		</list>
 		<list key="replacehistory">
+			<item value="HSSF"/>
+			<item value="student"/>
+			<item value="stuList"/>
 			<item value="Student"/>
 			<item value="\&quot;"/>
 			<item value="/&quot;"/>

@@ -3501,3 +3501,585 @@ org.eclipse.core.runtime.CoreException: Launch configuration MobPushTest referen
 2018-11-10 16:07:50,769 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
 2018-11-10 16:07:50,770 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-11-10 16:07:50,771 [Worker-153] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 21:07:44,837 [Worker-262] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-11-10 21:15:38,011 [Worker-267] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-11-10 21:15:38,509 [Worker-267] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-11-10 21:15:38,829 [Worker-267] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /emp-manage-system/src/main/java
+2018-11-10 21:15:38,829 [Worker-267] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /emp-manage-system/src/main/resources
+2018-11-10 21:15:38,830 [Worker-267] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /emp-manage-system/src/test/java
+2018-11-10 21:15:39,020 [Worker-267] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2018-11-10 21:59:21,651 [Worker-279] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 21:59:21,652 [Worker-279] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 21:59:21,680 [Worker-279] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 21:59:21,680 [Worker-279] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 22:01:37,723 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:01:37,725 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 22:01:37,728 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:01:37,729 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 22:02:55,098 [Worker-285] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:02:55,099 [Worker-285] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 22:02:55,101 [Worker-285] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:02:55,101 [Worker-285] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 22:14:52,550 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:14:52,551 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 22:14:52,553 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:14:52,553 [Worker-291] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 22:26:13,697 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:26:13,698 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 22:26:13,700 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:26:13,701 [Worker-288] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 22:29:43,499 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:29:43,500 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 22:29:43,502 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:29:43,502 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 22:54:40,389 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:54:40,391 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 22:54:40,392 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:54:40,393 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 22:55:40,968 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:55:40,969 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 22:55:40,970 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 22:55:40,970 [Worker-311] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 23:07:14,166 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:07:14,167 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 23:07:14,169 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:07:14,169 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 23:09:33,925 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:09:33,926 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 23:09:33,927 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:09:33,927 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 23:12:49,113 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:12:49,115 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 23:12:49,117 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:12:49,117 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 23:14:50,117 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:14:50,118 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 23:14:50,119 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:14:50,120 [Worker-318] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-10 23:35:42,697 [Worker-326] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:35:42,698 [Worker-326] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-10 23:35:42,699 [Worker-326] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-10 23:35:42,700 [Worker-326] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-11 11:23:50,604 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-11 11:23:50,625 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-11 11:23:50,631 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-11 11:23:50,631 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-14 21:51:33,043 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-11-14 21:56:30,633 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-14 21:56:30,639 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-14 21:56:30,648 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-14 21:56:30,648 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-11-15 21:08:09,448 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-11-15 21:08:09,472 [Worker-32] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-11-15 21:09:21,241 [ModalContext] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-15 21:09:21,246 [ModalContext] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-11-15 21:09:21,254 [ModalContext] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-11-15 21:09:21,254 [ModalContext] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-01 15:25:17,080 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-12-01 15:25:18,769 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-01 15:25:18,786 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-01 15:25:18,897 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-01 15:25:18,898 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-01 15:25:20,959 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-01 15:25:20,960 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-12-01 15:25:20,975 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-01 15:25:20,976 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-07 20:25:39,085 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-12-07 20:25:40,436 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-07 20:25:40,442 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-07 20:25:40,458 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-07 20:25:40,460 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-07 20:25:41,664 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-07 20:25:41,664 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-12-07 20:25:41,680 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-07 20:25:41,681 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-07 21:58:53,391 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-07 21:58:53,398 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2018-12-07 21:58:53,400 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-07 21:58:53,400 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 00:03:12,127 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:03:12,136 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 00:03:12,148 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:03:12,148 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 00:08:41,561 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:08:41,562 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 00:08:41,564 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:08:41,564 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 00:08:45,443 [Worker-86] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9-sources.jar
+2018-12-08 00:08:52,240 [Worker-86] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9-sources.jar
+2018-12-08 00:08:52,533 [Worker-86] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.poi:poi-ooxml:3.9
+2018-12-08 00:08:53,847 [Worker-83] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.poi:poi-ooxml:3.9
+2018-12-08 00:13:28,122 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:13:28,123 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 00:13:28,126 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:13:28,126 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 00:14:00,308 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:14:00,309 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 00:14:00,310 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:14:00,311 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 00:14:42,009 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:14:42,011 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 00:14:42,013 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:14:42,013 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 00:20:38,262 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:20:38,264 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 00:20:38,266 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:20:38,266 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 00:21:55,875 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:21:55,876 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 00:21:55,878 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 00:21:55,878 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 12:24:45,747 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-12-08 12:24:46,223 [Worker-20] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-08 12:24:47,505 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-08 12:24:48,302 [Worker-20] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+2018-12-08 12:24:48,828 [Worker-20] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+2018-12-08 12:24:49,120 [Worker-20] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-parent/37/commons-parent-37.pom
+2018-12-08 12:24:50,332 [Worker-20] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-parent/37/commons-parent-37.pom
+2018-12-08 12:24:50,520 [Worker-20] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+2018-12-08 12:24:55,031 [Worker-20] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+2018-12-08 12:24:58,906 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:24:58,915 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-08 12:24:59,071 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:24:59,074 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-08 12:24:59,076 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-08 12:24:59,077 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-08 12:24:59,284 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:25:00,668 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:25:00,669 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 12:25:00,697 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:25:00,697 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 12:30:03,941 [Worker-20] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-08 12:30:04,486 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-08 12:30:06,600 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:30:06,602 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-08 12:30:06,680 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:30:06,681 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-08 12:30:06,681 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-08 12:30:06,681 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-08 12:30:06,687 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:30:06,921 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:30:06,922 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 12:30:06,956 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:30:06,957 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 12:39:31,320 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-08 12:39:31,778 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-08 12:39:32,429 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/net/sf/json-lib/json-lib/2.2.2/json-lib-2.2.2.pom
+2018-12-08 12:39:32,844 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/net/sf/json-lib/json-lib/2.2.2/json-lib-2.2.2.pom
+2018-12-08 12:39:33,248 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/net/sf/ezmorph/ezmorph/1.0.4/ezmorph-1.0.4.pom
+2018-12-08 12:39:33,560 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/net/sf/ezmorph/ezmorph/1.0.4/ezmorph-1.0.4.pom
+2018-12-08 12:39:33,861 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/net/sf/json-lib/json-lib/2.2.2/json-lib-2.2.2-jdk15.jar
+2018-12-08 12:39:35,903 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/net/sf/json-lib/json-lib/2.2.2/json-lib-2.2.2-jdk15.jar
+2018-12-08 12:39:36,020 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+2018-12-08 12:39:39,714 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+2018-12-08 12:39:39,835 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/net/sf/ezmorph/ezmorph/1.0.4/ezmorph-1.0.4.jar
+2018-12-08 12:39:45,108 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/net/sf/ezmorph/ezmorph/1.0.4/ezmorph-1.0.4.jar
+2018-12-08 12:39:47,344 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:39:47,347 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-08 12:39:47,433 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:39:47,435 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-08 12:39:47,435 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-08 12:39:47,435 [Worker-22] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-08 12:39:47,440 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:39:47,708 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:39:47,708 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 12:39:47,723 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:39:47,723 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 12:43:15,346 [Worker-30] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-08 12:43:15,795 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-08 12:43:16,278 [Worker-30] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/jdom/jdom/1.1/jdom-1.1.pom
+2018-12-08 12:43:16,587 [Worker-30] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/jdom/jdom/1.1/jdom-1.1.pom
+2018-12-08 12:43:16,994 [Worker-30] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/jdom/jdom/1.1/jdom-1.1.jar
+2018-12-08 12:43:20,666 [Worker-30] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/jdom/jdom/1.1/jdom-1.1.jar
+2018-12-08 12:43:21,877 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:43:21,880 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-08 12:43:22,104 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:43:22,107 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-08 12:43:22,108 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-08 12:43:22,108 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-08 12:43:22,115 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 12:43:22,419 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:43:22,420 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 12:43:22,432 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 12:43:22,432 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 13:29:23,315 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 13:29:23,338 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 13:29:23,340 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 13:29:23,340 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 13:30:05,006 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-08 13:30:05,007 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-08 13:32:32,703 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 13:32:32,705 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 13:32:32,708 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 13:32:32,708 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 14:14:29,523 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 14:14:29,524 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 14:14:29,527 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 14:14:29,527 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 14:15:30,052 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 14:15:30,052 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 14:15:30,054 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 14:15:30,055 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 15:41:12,292 [Worker-76] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-08 15:41:12,720 [Worker-76] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-08 15:41:13,713 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 15:41:13,717 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-08 15:41:13,796 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 15:41:13,837 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-08 15:41:13,837 [Worker-86] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-08 15:41:13,837 [Worker-86] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-08 15:41:13,861 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 15:41:14,112 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 15:41:14,113 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 15:41:14,131 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 15:41:14,131 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 15:46:08,427 [Worker-89] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-08 15:46:08,805 [Worker-89] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-08 15:46:09,265 [Worker-89] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.pom
+2018-12-08 15:46:09,483 [Worker-89] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.pom
+2018-12-08 15:46:09,621 [Worker-89] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.jar
+2018-12-08 15:46:11,547 [Worker-89] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.jar
+2018-12-08 15:46:12,500 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 15:46:12,502 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-08 15:46:12,602 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 15:46:12,603 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-08 15:46:12,604 [Worker-76] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-08 15:46:12,604 [Worker-76] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-08 15:46:12,608 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-08 15:46:12,860 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 15:46:12,861 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 15:46:12,875 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 15:46:12,875 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 20:34:49,356 [Worker-136] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-08 20:34:49,357 [Worker-136] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-08 20:35:39,289 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 20:35:39,290 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 20:35:39,292 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 20:35:39,292 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 20:40:09,696 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 20:40:09,699 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-08 20:40:09,702 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 20:40:09,702 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-08 20:41:45,887 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 20:41:45,889 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-12-08 20:41:45,894 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-08 20:41:45,895 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:15:41,776 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:15:41,812 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:15:41,820 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:15:41,820 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:23:04,345 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:23:04,370 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:23:04,373 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:23:04,373 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:26:14,485 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:26:14,489 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:26:14,491 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:26:14,491 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:29:22,395 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:29:22,397 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:29:22,399 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:29:22,400 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:30:21,374 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:30:21,375 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:30:21,378 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:30:21,378 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:31:03,479 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:31:03,483 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:31:03,485 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:31:03,485 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:35:06,679 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:35:06,681 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:35:06,685 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:35:06,686 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:36:14,528 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:36:14,529 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:36:14,534 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:36:14,534 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:37:41,949 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:37:41,951 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:37:41,952 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:37:41,953 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:38:45,941 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:38:45,943 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:38:45,945 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:38:45,945 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:45:07,227 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:45:07,229 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:45:07,232 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:45:07,233 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:50:56,252 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:50:56,253 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:50:56,256 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:50:56,256 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 13:54:14,330 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:54:14,331 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 13:54:14,333 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 13:54:14,333 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 17:38:28,854 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 17:38:28,855 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 17:38:28,856 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 17:38:28,856 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 17:49:02,708 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 17:49:02,709 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 17:49:02,711 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 17:49:02,712 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 18:00:50,027 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:00:50,029 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 18:00:50,033 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:00:50,033 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 18:03:44,273 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:03:44,275 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 18:03:44,277 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:03:44,277 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 18:14:37,172 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:14:37,173 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 18:14:37,175 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:14:37,175 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 18:52:59,830 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:52:59,831 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 18:52:59,833 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:52:59,833 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 18:55:18,405 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:55:18,406 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 18:55:18,408 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 18:55:18,408 [Worker-141] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 19:03:21,382 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:03:21,383 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 19:03:21,386 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:03:21,386 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 19:05:05,410 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:05:05,411 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 19:05:05,413 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:05:05,414 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 19:33:43,045 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:33:43,047 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 19:33:43,050 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:33:43,050 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 19:37:17,100 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:37:17,102 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 19:37:17,104 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:37:17,104 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 19:38:59,087 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:38:59,087 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 19:38:59,089 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:38:59,089 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-09 19:56:05,711 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:56:05,714 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-09 19:56:05,718 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-09 19:56:05,719 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 09:23:43,319 [Worker-255] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-10 09:23:43,321 [Worker-255] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-10 09:33:32,996 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 09:33:32,998 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 09:33:33,004 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 09:33:33,004 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 10:23:27,752 [Worker-281] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-10 10:23:27,752 [Worker-281] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-10 10:23:53,887 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 10:23:53,888 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 10:23:53,890 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 10:23:53,890 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 10:25:00,744 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 10:25:00,745 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 10:25:00,747 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 10:25:00,747 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 15:36:09,382 [Worker-369] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-10 15:36:09,383 [Worker-369] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-10 15:36:53,000 [Worker-375] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:36:53,001 [Worker-375] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 15:36:53,004 [Worker-375] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:36:53,004 [Worker-375] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 15:38:06,174 [Worker-375] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-10 15:38:06,175 [Worker-375] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-10 15:38:18,609 [Worker-369] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:38:18,610 [Worker-369] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 15:38:18,613 [Worker-369] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:38:18,614 [Worker-369] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 15:39:41,977 [Worker-377] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:39:41,979 [Worker-377] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 15:39:41,981 [Worker-377] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:39:41,981 [Worker-377] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 15:40:46,467 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:40:46,468 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 15:40:46,471 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:40:46,471 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 15:52:46,746 [Worker-379] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:52:46,748 [Worker-379] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 15:52:46,750 [Worker-379] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:52:46,750 [Worker-379] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 15:54:55,689 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:54:55,691 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 15:54:55,692 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:54:55,693 [Worker-383] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 15:56:19,046 [Worker-385] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:56:19,047 [Worker-385] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 15:56:19,048 [Worker-385] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 15:56:19,048 [Worker-385] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:18:35,966 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:18:35,968 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:18:35,973 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:18:35,973 [Worker-394] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:21:45,172 [Worker-396] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-10 16:21:45,172 [Worker-396] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-10 16:21:55,910 [Worker-396] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:21:55,911 [Worker-396] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:21:55,912 [Worker-396] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:21:55,913 [Worker-396] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:25:47,030 [Worker-393] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:25:47,031 [Worker-393] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:25:47,034 [Worker-393] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:25:47,034 [Worker-393] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:29:24,327 [Worker-395] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-12-10 16:29:24,495 [Worker-395] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-10 16:29:25,416 [Worker-395] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-10 16:29:26,184 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.pom
+2018-12-10 16:29:26,511 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.pom
+2018-12-10 16:29:26,797 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.pom
+2018-12-10 16:29:27,017 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.pom
+2018-12-10 16:29:27,279 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom
+2018-12-10 16:29:27,432 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom
+2018-12-10 16:29:27,606 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.pom
+2018-12-10 16:29:28,674 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.pom
+2018-12-10 16:29:28,887 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar
+2018-12-10 16:29:53,796 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar
+2018-12-10 16:29:53,915 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar
+2018-12-10 16:31:56,663 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar
+2018-12-10 16:31:56,775 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar
+2018-12-10 16:32:46,456 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar
+2018-12-10 16:32:46,664 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar
+2018-12-10 16:32:48,100 [Worker-395] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar
+2018-12-10 16:32:53,814 [Worker-401] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-10 16:32:53,816 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-10 16:32:53,968 [Worker-401] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-10 16:32:53,970 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-10 16:32:53,971 [Worker-401] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-10 16:32:53,972 [Worker-401] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-10 16:32:54,149 [Worker-401] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-10 16:32:55,321 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:32:55,321 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:32:55,368 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:32:55,368 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:35:27,500 [Worker-403] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for emp
+2018-12-10 16:35:28,061 [Worker-403] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kaisn:emp-manage-system:0.0.1-SNAPSHOT @ D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\pom.xml.
+2018-12-10 16:35:29,269 [Worker-400] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-10 16:35:29,272 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-10 16:35:29,377 [Worker-400] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-10 16:35:29,378 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-10 16:35:29,378 [Worker-400] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of emp
+2018-12-10 16:35:29,379 [Worker-400] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for emp
+2018-12-10 16:35:29,384 [Worker-400] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-10 16:35:29,817 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:35:29,817 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:35:29,832 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:35:29,832 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:37:21,711 [Worker-404] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:37:21,714 [Worker-404] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:37:21,715 [Worker-404] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:37:21,715 [Worker-404] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:41:57,436 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:41:57,437 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:41:57,439 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:41:57,439 [Worker-401] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:47:44,613 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:47:44,614 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:47:44,617 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:47:44,617 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:48:50,987 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:48:50,989 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:48:50,991 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:48:50,991 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:53:05,441 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:53:05,442 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:53:05,445 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:53:05,446 [Worker-400] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 16:54:07,183 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:54:07,184 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 16:54:07,186 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 16:54:07,186 [Worker-408] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-10 17:49:10,967 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 17:49:10,967 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-10 17:49:10,969 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-10 17:49:10,969 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-14 19:30:58,079 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2018-12-14 19:30:58,487 [Worker-28] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-14 19:30:59,030 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-14 19:30:59,039 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2018-12-14 19:30:59,079 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-14 19:30:59,081 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp\src\test\resources
+2018-12-14 21:33:24,466 [Worker-44] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-14 21:33:24,474 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:33:24,474 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-14 21:33:24,477 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:33:24,477 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-14 21:34:23,375 [Worker-47] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-14 21:34:23,380 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:34:23,411 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-14 21:34:23,414 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:34:23,414 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-14 21:34:51,659 [Worker-44] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-14 21:34:51,664 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:34:51,666 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-14 21:34:51,671 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:34:51,671 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-14 21:35:08,486 [Worker-46] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-14 21:35:08,488 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:35:08,489 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-14 21:35:08,491 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:35:08,492 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-14 21:38:33,282 [Worker-50] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-14 21:38:33,285 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:38:33,286 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-14 21:38:33,289 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:38:33,289 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-14 21:38:52,750 [Worker-47] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-14 21:38:52,754 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:38:52,755 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-14 21:38:52,758 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-14 21:38:52,758 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 13:47:27,521 [Worker-49] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system
+2018-12-15 13:47:27,525 [Worker-49] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 2 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-15 13:49:20,830 [Worker-51] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 13:49:20,836 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 13:49:20,838 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 13:49:20,840 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 13:49:20,840 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 14:11:14,095 [Worker-57] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 14:11:14,098 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:11:14,099 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 14:11:14,101 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:11:14,101 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 14:32:29,990 [Worker-66] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 14:32:29,994 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:32:29,995 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 14:32:29,998 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:32:29,998 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 14:37:03,399 [Worker-64] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 14:37:03,405 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:37:03,409 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 14:37:03,411 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:37:03,412 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 14:39:21,900 [Worker-62] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 14:39:21,902 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:39:21,904 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 14:39:21,907 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:39:21,907 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 14:40:05,787 [Worker-55] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 14:40:05,790 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:40:05,791 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 14:40:05,794 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:40:05,794 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 14:41:36,524 [Worker-62] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 14:41:36,527 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:41:36,528 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 14:41:36,530 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:41:36,531 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-15 14:50:41,364 [Worker-72] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2018-12-15 14:50:41,367 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:50:41,368 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-12-15 14:50:41,370 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-12-15 14:50:41,370 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\lijing\workspace\ssm_crud\ssm_study\emp-manage-system\src\test\resources
+2018-12-16 11:38:34,603 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp
+2018-12-16 11:38:34,631 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests --threads 4 -s D:\Software\apache-maven-3.5.2\conf\settings.xml clean install
+2018-12-16 11:38:55,990 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\lijing\workspace\ssm_crud\ssm_study\emp
+2018-12-16 11:38:55,991 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\Software\apache-maven-3.5.2\conf\settings.xml tomcat7:run

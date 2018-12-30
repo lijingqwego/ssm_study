@@ -1,23 +1,25 @@
 package com.kaisn.pojo;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.swing.filechooser.FileSystemView;
-
-import com.kaisn.utils.Constans;
-import com.kaisn.utils.ExcelUtils;
+import com.kaisn.anno.FieldMeta;
 
 public class Student {
 	
+	@FieldMeta(name="学号")
 	private String no;
+	
+	@FieldMeta(name="姓名")
 	private String name;
+	
+	@FieldMeta(name="性别")
 	private String gender;
+	
+	@FieldMeta(name="年龄")
 	private String age;
+	
+	@FieldMeta(name="住址")
 	private String place;
+	
+	@FieldMeta(name="部门")
 	private String dept;
 
 	public String getNo() {
@@ -68,11 +70,7 @@ public class Student {
 		this.dept = dept;
 	}
 
-	public static void main(String[] args) throws FileNotFoundException {
-//		StudentMapper mapper = MapperUtil.getMapper(StudentMapper.class);
-//		mapper.deleteStudent("1031");
-//		MapperUtil.closeUpdSession();
-		
+	/*public static void main(String[] args) throws FileNotFoundException {
 		FileSystemView fsv = FileSystemView.getFileSystemView();
 		File com=fsv.getHomeDirectory();    //这便是读取桌面路径的方法了
 		File file = new File(com.getAbsolutePath(),"学生列表.xls");
@@ -81,6 +79,6 @@ public class Student {
 		param.put("title", Constans.TITLES);
 		ExcelUtils.writeExcel(param, out, Constans.Excel_Export_Template);	
 		System.out.println(com.getPath());
-	}
+	}*/
 
 }

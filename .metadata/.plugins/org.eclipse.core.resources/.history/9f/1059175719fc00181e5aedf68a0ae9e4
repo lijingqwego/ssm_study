@@ -1,0 +1,9 @@
+package com.kaisn.dao;
+
+import com.kaisn.pojo.Area;
+
+public interface AreaMapper {
+
+	Area getAreaInfo(Area area);
+	
+}

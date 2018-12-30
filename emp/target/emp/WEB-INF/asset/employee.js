@@ -18,9 +18,9 @@ $(function() {
 function to_page(curPage) {
 	$.ajax({
 		url : appPath+"/emp/list/"+curPage,
-		//data:$("#from_search").serialize(),
+		data:$("#from_search").serialize(),
 		async:false,
-		type : "GET",
+		type : "POST",
 		success : function(result) {
 			//console.log(result);
 			//return ;

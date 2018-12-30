@@ -5,7 +5,9 @@ com\kaisn\utils\Constans.class
 com\kaisn\utils\DateUtil.class
 com\kaisn\service\EmployeeService.class
 com\kaisn\test\javabase\ReflectService.class
+com\kaisn\http\HTTPUtils$miTM.class
 com\kaisn\utils\StringUtils.class
+com\kaisn\test\javabase\Test.class
 com\kaisn\test\mq\RabbitMQReceiver.class
 com\kaisn\pojo\Employee.class
 com\kaisn\http\SSLClient.class
@@ -15,6 +17,7 @@ com\kaisn\http\ClientTrustManager.class
 com\kaisn\pojo\Msg.class
 com\kaisn\dao\UserMapper.class
 com\kaisn\http\HttpsUtil.class
+com\kaisn\http\HTTPUtils$1.class
 com\kaisn\dao\DepartmentMapper.class
 com\kaisn\utils\ExcelUtils.class
 com\kaisn\test\javabase\JdkProxyExample.class
@@ -23,6 +26,8 @@ com\kaisn\controller\DepartmentController.class
 com\kaisn\http\HostnameVerifierUtil.class
 com\kaisn\pojo\Department.class
 com\kaisn\dao\EmployeeMapper.class
+com\kaisn\http\HTTPUtils.class
+com\kaisn\anno\FieldMeta.class
 com\kaisn\http\HttpsClientUtil.class
 com\kaisn\utils\EncryptUtil.class
 com\kaisn\http\HttpsRequestUtil.class
@@ -31,12 +36,15 @@ com\kaisn\test\javabase\FeflectTest.class
 com\kaisn\pojo\Position.class
 com\kaisn\pojo\User.class
 com\kaisn\controller\PositionController.class
+com\kaisn\test\javabase\EmpTest.class
 com\kaisn\service\UserService.class
 com\kaisn\service\PositionService.class
+com\kaisn\utils\ResourceReaderUtil.class
 com\kaisn\dao\PositionMapper.class
 com\kaisn\flyway\MigrationSqlite.class
 com\kaisn\service\DepartmentService.class
 com\kaisn\http\HostnameVerifierUtil$1.class
+com\kaisn\test\javabase\DruidTest.class
 com\kaisn\test\javabase\PropertiesTest.class
 com\kaisn\test\javabase\UserTest.class
 com\kaisn\controller\EmployeeController.class

@@ -22,8 +22,8 @@ public class DruidTest {
 //		String json = getGroupByJsonParam(param);
 		String json = getSelectJsonParam(param);
 		System.out.println(json);
-		String result = OKHttpClinent.httpJsonPost("http://192.168.109.129:8082/druid/v2?pretty", json);
-		System.out.println(result);
+//		String result = OKHttpClinent.httpJsonPost("http://192.168.109.129:8082/druid/v2?pretty", json);
+//		System.out.println(result);
 	}
 
 	public static String getGroupByJsonParam(Map<String, String> param) {

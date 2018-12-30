@@ -1,0 +1,11 @@
+package com.kaisn.dao;
+
+import org.apache.ibatis.annotations.Param;
+
+import com.kaisn.pojo.Student;
+
+public interface AreaMapper {
+
+	Student getAreaInfo(@Param("no")String no);
+	
+}
