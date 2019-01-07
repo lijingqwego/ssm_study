@@ -54,7 +54,7 @@ public class SheetHandler extends DefaultHandler {
 			nextIsString = false;
 		}
 		if (name.equals("v")) {
-			// System.out.println("lastContents:"+cellPosition+";"+lastContents);
+			 System.out.println("lastContents:"+cellPosition+";"+lastContents);
 			// 数据读取结束后，将单元格坐标,内容存入map中
 			if (!(cellPosition.length() == 2)
 					|| (cellPosition.length() == 2 && !"1".equals(cellPosition.substring(1)))) {// 不保存第一行数据

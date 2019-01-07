@@ -108,7 +108,7 @@ public class LargeExcelFileReadUtil {
 	public static void main(String[] args) throws Exception {
 		Long time = System.currentTimeMillis();
 		LargeExcelFileReadUtil example = new LargeExcelFileReadUtil();
-		example.processOneSheet("/home/lijing/未命名 1.xlsx");
+		example.processOneSheet("C:/Users/lwx515559/Desktop/员工列表-20190106210108784.xlsx");
 		Long endtime = System.currentTimeMillis();
 		LinkedHashMap<String, String> map = example.getRowContents();
 		Iterator<Entry<String, String>> it = map.entrySet().iterator();
@@ -121,7 +121,7 @@ public class LargeExcelFileReadUtil {
 				prePos = pos.substring(1);
 				count++;
 			}
-			System.out.println(pos + ";" + entry.getValue());
+			//System.out.println(pos + ";" + entry.getValue());
 		}
 		System.out.println("解析数据" + count + "条;耗时" + (endtime - time) / 1000 + "秒");
 	}

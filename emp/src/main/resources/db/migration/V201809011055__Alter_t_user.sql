@@ -1,1 +1,0 @@
-ALTER TABLE t_user ADD COLUMN audience VARCHAR(255);
